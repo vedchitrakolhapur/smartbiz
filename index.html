@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>गावठी शेतमाल</title>
+    <meta name="description" content="Welcome to our store">
+    <meta name="theme-color" content="#28a745">
+    
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="https://vedchitrakolhapur.github.io/smartbiz/assets/img_490834.webp">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700&amp;display=swap" rel="stylesheet">
+
+    <style>
+         
+        :root {
+            --primary: #28a745;
+            --text-dark: #333;
+            --text-light: #666;
+            --bg-light: #f8f9fa;
+        }
+        
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Mukta', sans-serif; background: #f0f2f5; color: var(--text-dark); line-height: 1.6; padding-bottom: 70px; }
+        a { text-decoration: none; color: inherit; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 15px; }
+
+         
+        .header {
+            background: white; padding: 15px 0; position: sticky; top: 0; z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08); border-bottom: 3px solid var(--primary);
+        }
+        .header-content { display: flex; align-items: center; justify-content: space-between; }
+        .brand { display: flex; align-items: center; gap: 12px; }
+        .brand img { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary); }
+        .brand-text h1 { font-size: 20px; font-weight: 700; color: var(--primary); line-height: 1.2; }
+        .brand-text p { font-size: 13px; color: var(--text-light); }
+        .header-actions a {
+            display: inline-flex; width: 40px; height: 40px; background: #e8f5e9; color: #25D366;
+            border-radius: 50%; align-items: center; justify-content: center; font-size: 20px;
+        }
+
+         
+        .slider-container { width: 100%; max-width: 1000px; margin: 15px auto; overflow: hidden; position: relative; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .slides { display: flex; transition: transform 0.5s ease-in-out; }
+        .slide { min-width: 100%; }
+        .slide img { width: 100%; height: 200px; object-fit: cover; display: block; }
+        @media(min-width: 768px) { .slide img { height: 350px; } }
+
+         
+        .features-row {
+            display: flex; gap: 15px; overflow-x: auto; padding: 15px 0; margin: 10px 0;
+            scrollbar-width: none;  
+        }
+        .features-row::-webkit-scrollbar { display: none; }
+        .feature-card {
+            background: white; padding: 10px 15px; border-radius: 50px; display: flex; align-items: center; gap: 8px;
+            white-space: nowrap; font-size: 14px; font-weight: 600; color: var(--primary);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05); border: 1px solid #eee;
+        }
+
+         
+        .section-card { background: white; border-radius: 12px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        .section-title { font-size: 18px; font-weight: 700; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; color: #222; }
+        .section-title i { color: var(--primary); }
+
+         
+        .category-title {
+            background: var(--primary); color: white; display: inline-block; padding: 5px 15px;
+            border-radius: 8px 8px 0 0; font-size: 16px; margin-top: 20px; font-weight: bold;
+        }
+        .products-grid {
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 15px;
+            background: white; padding: 15px; border-radius: 0 8px 8px 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        @media(min-width: 768px) { .products-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); } }
+        
+        .product-card {
+            border: 1px solid #eee; border-radius: 10px; overflow: hidden; background: #fff;
+            display: flex; flex-direction: column; transition: 0.3s;
+        }
+        .product-card:hover { box-shadow: 0 5px 15px rgba(0,0,0,0.1); transform: translateY(-3px); }
+        .product-img { width: 100%; height: 140px; object-fit: cover; background: #f8f9fa; }
+        .product-info { padding: 12px; flex: 1; display: flex; flex-direction: column; }
+        .product-name { font-size: 15px; font-weight: 700; color: #222; margin-bottom: 5px; line-height: 1.3; }
+        .product-price { font-size: 16px; font-weight: 700; color: var(--primary); margin-bottom: 5px; }
+        .product-desc { font-size: 12px; color: var(--text-light); margin-bottom: 15px; flex: 1; line-height: 1.4; }
+        
+        .btn-whatsapp {
+            background: #25D366; color: white; text-align: center; padding: 8px; border-radius: 6px;
+            font-size: 13px; font-weight: 600; cursor: pointer; border: none; width: 100%;
+            display: flex; align-items: center; justify-content: center; gap: 6px;
+        }
+        .btn-whatsapp:hover { background: #1ebe57; }
+
+         
+        .contact-item { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 15px; font-size: 15px; }
+        .contact-item i { color: var(--primary); font-size: 18px; margin-top: 3px; }
+        .social-links { display: flex; gap: 15px; margin-top: 20px; }
+        .social-links a { width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px; }
+        .s-fb { background: #1877F2; } .s-ig { background: #E4405F; } .s-yt { background: #FF0000; }
+
+         
+        .footer { text-align: center; padding: 20px; color: #777; font-size: 13px; margin-top: 20px; }
+
+         
+        .floating-action {
+            position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white;
+            width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            font-size: 30px; box-shadow: 0 4px 10px rgba(37, 211, 102, 0.4); z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-content">
+            <div class="brand">
+                                    <img src="https://vedchitrakolhapur.github.io/smartbiz/assets/img_490834.webp" alt="Logo">
+                                <div class="brand-text">
+                    <h1>गावठी शेतमाल</h1>
+                    <p></p>
+                </div>
+            </div>
+            <div class="header-actions">
+                                    <a href="https://wa.me/917498663848" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+                <div class="slider-container">
+            <div class="slides" id="slider">
+                                    <div class="slide"><img src="https://vedchitrakolhapur.github.io/smartbiz/assets/img_291099.webp"></div>
+                                    <div class="slide"><img src="https://vedchitrakolhapur.github.io/smartbiz/assets/img_111933.webp"></div>
+                            </div>
+        </div>
+        
+                <div class="features-row">
+                            <div class="feature-card"><i class="fas fa-check-circle"></i> १००% नैसर्गिक</div>
+                            <div class="feature-card"><i class="fas fa-check-circle"></i> वेबसाईट टेस्ट करू शकता.</div>
+                            <div class="feature-card"><i class="fas fa-check-circle"></i> सर्व डिझाईन आणि प्रॉडक्ट्स</div>
+                    </div>
+        
+                                                                                    <div class="category-title">फळे</div>
+                    <div class="products-grid">
+                                                    <div class="product-card">
+                                                                    <img src="https://vedchitrakolhapur.github.io/smartbiz/assets/img_377293.webp" class="product-img" loading="lazy">
+                                                                <div class="product-info">
+                                    <div class="product-name">आंबा </div>
+                                                                        <div class="product-desc">सर्व डिझाईन आणि प्रॉडक्ट्स</div>
+                                    <button class="btn-whatsapp" onclick="enquireProduct('आंबा ', '7498663848')">
+                                        <i class="fab fa-whatsapp"></i> चौकशी करा
+                                    </button>
+                                </div>
+                            </div>
+                                                    <div class="product-card">
+                                                                    <div class="product-img" style="display:flex; align-items:center; justify-content:center; color:#ccc;"><i class="fas fa-image fa-3x"></i></div>
+                                                                <div class="product-info">
+                                    <div class="product-name">काजू </div>
+                                                                        <div class="product-desc">सर्व डिझाईन आणि प्रॉडक्ट्स</div>
+                                    <button class="btn-whatsapp" onclick="enquireProduct('काजू ', '7498663848')">
+                                        <i class="fab fa-whatsapp"></i> चौकशी करा
+                                    </button>
+                                </div>
+                            </div>
+                                            </div>
+                                    
+                <div class="section-card" style="margin-top: 30px;">
+            <h2 class="section-title"><i class="fas fa-address-card"></i> आमच्याबद्दल</h2>
+            <p style="white-space: pre-wrap; font-size:15px;">तुम्ही सुरुवातीला या लिंकवर तुमची पूर्ण वेबसाईट टेस्ट करू शकता. सर्व डिझाईन आणि प्रॉडक्ट्स व्यवस्थित दिसू लागल्यानंतर, तुम्ही कधीही GoDaddy किंवा Hostinger वरून gavathishetmal.com डोमेन घेऊन ते GitHub ला कनेक्ट करू शकता. डोमेन कनेक्ट झाल्यावर फक्त CUSTOM_DOMAIN मध्ये gavathishetmal.com टाकायचे, 
+
+आणि सर्व काही आधीसारखेच काम करेल.</p>
+                            <p style="margin-top: 15px; font-weight:bold; color:var(--primary);">संचालक: श्री. राम पाटील </p>
+                    </div>
+        
+        <div class="section-card">
+            <h2 class="section-title"><i class="fas fa-map-marker-alt"></i> संपर्क माहिती</h2>
+            
+                            <div class="contact-item"><i class="fas fa-home"></i> <div>नंतर, सिस्टीम आपोआप GitHub Pages ची डीफॉल्ट लिंक जनरेट करेल आणि सेव्ह करेल.</div></div>
+                        
+                            <div class="contact-item"><i class="fas fa-phone-alt"></i> <div><a href="tel:7498663848">7498663848</a></div></div>
+            
+                            <div class="social-links">
+                    <a href="#" target="_blank" class="s-fb"><i class="fab fa-facebook-f"></i></a>                    <a href="#" target="_blank" class="s-ig"><i class="fab fa-instagram"></i></a>                    <a href="#" target="_blank" class="s-yt"><i class="fab fa-youtube"></i></a>                </div>
+            
+                            <div style="margin-top: 20px; border-radius:10px; overflow:hidden; border:1px solid #eee;">
+                    <iframe src="#" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                    </div>
+
+    </div>
+
+    <footer class="footer">
+        &copy; 2026 गावठी शेतमाल. All Rights Reserved.
+    </footer>
+
+        <a href="https://wa.me/917498663848?text=नमस्कार,%20मला%20माहिती%20हवी%20आहे." target="_blank" class="floating-action">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <script>
+        
+        let slideIndex = 0;
+        const slider = document.getElementById('slider');
+        const slides = document.querySelectorAll('.slide');
+        
+        if(slides.length > 1) {
+            setInterval(() => {
+                slideIndex++;
+                if (slideIndex >= slides.length) slideIndex = 0;
+                slider.style.transform = `translateX(-${slideIndex * 100}%)`;
+            }, 3500); 
+        }
+
+        
+        function enquireProduct(productName, number) {
+            if(!number || number === "") {
+                alert("व्यापाऱ्याचा WhatsApp नंबर उपलब्ध नाही.");
+                return;
+            }
+            
+            
+            let cleanNumber = number.replace(/\D/g, '');
+            if(cleanNumber.length === 10) cleanNumber = '91' + cleanNumber;
+
+            
+            let message = `नमस्कार, \nमला *'${productName}'* याबद्दल अधिक माहिती हवी आहे.\n(किंमत, डिलिव्हरी इत्यादी.)`;
+            
+            
+            let waUrl = `https:
+            window.open(waUrl, '_blank');
+        }
+
+        
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('service-worker.js').catch(err => {
+                    console.log('SW Registration failed: ', err);
+                });
+            });
+        }
+    </script>
+</body>
+</html>
