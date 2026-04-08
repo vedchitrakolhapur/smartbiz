@@ -6,10 +6,20 @@
     
     <title>Gavathi Shetmal</title>
     <meta name="description" content="शिवारातून थेट ताटात ..">
+    <meta name="keywords" content="गावठी शेतमाल, fresh vegetables, organic fruits, buy online, गावठी शेतमाल, नंतर, सिस्टीम आपोआप GitHub Pages ची डीफॉल्ट लिंक जनरेट करेल आणि सेव्ह करेल.">
     <meta name="theme-color" content="#28a745">
     
-    <link rel="manifest" href="manifest.json">
+    <meta name="google-site-verification" content="YOUR_GOOGLE_SEARCH_CONSOLE_CODE_HERE" />
+
+    <link rel="icon" type="image/png" href="https://vedchitrakolhapur.github.io/smartbiz/assets/img_490834.webp">
     <link rel="apple-touch-icon" href="https://vedchitrakolhapur.github.io/smartbiz/assets/img_490834.webp">
+    
+    <meta property="og:title" content="गावठी शेतमाल">
+    <meta property="og:description" content="शिवारातून थेट ताटात ..">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://vedchitrakolhapur.github.io/smartbiz/assets/img_291099.webp">
+
+    <link rel="manifest" href="manifest.json">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700&amp;display=swap" rel="stylesheet">
@@ -23,108 +33,99 @@
             --bg-light: #f8f9fa;
         }
         
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Mukta', sans-serif; background: #f0f2f5; color: var(--text-dark); line-height: 1.6; padding-bottom: 70px; }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Mukta', sans-serif;}
+        body { background: #f0f2f5; color: var(--text-dark); line-height: 1.6; padding-bottom: 70px; overflow-x: hidden; }
         a { text-decoration: none; color: inherit; scroll-behavior: smooth; }
         .container { max-width: 1000px; margin: 0 auto; padding: 0 15px; }
 
          
-        .header {
-            background: white; padding: 15px 0; position: sticky; top: 0; z-index: 100;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08); border-bottom: 3px solid var(--primary);
-        }
-        .header-content { display: flex; align-items: center; justify-content: space-between; }
+        .header { background: white; padding: 12px 0; position: sticky; top: 0; z-index: 500; box-shadow: 0 2px 10px rgba(0,0,0,0.08); border-bottom: 3px solid var(--primary); }
+        .header-content { display: flex; align-items: center; justify-content: space-between; padding: 0 15px; max-width: 1000px; margin: 0 auto; }
         .header-left { display: flex; align-items: center; gap: 15px; }
         .menu-btn { font-size: 24px; color: var(--primary); cursor: pointer; }
-        .brand { display: flex; align-items: center; gap: 12px; }
-        .brand img { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary); }
-        .brand-text h1 { font-size: 20px; font-weight: 700; color: var(--primary); line-height: 1.2; }
-        .brand-text p { font-size: 13px; color: var(--text-light); }
-        .header-actions a {
-            display: inline-flex; width: 40px; height: 40px; background: #e8f5e9; color: #25D366;
-            border-radius: 50%; align-items: center; justify-content: center; font-size: 20px;
-        }
+        .brand { display: flex; align-items: center; gap: 10px; }
+        .brand img { width: 45px; height: 45px; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary); }
+        .brand-text h1 { font-size: 18px; font-weight: 700; color: var(--primary); line-height: 1.1; }
+        .brand-text p { font-size: 12px; color: var(--text-light); margin-top:2px; }
+        .header-actions a { display: inline-flex; width: 40px; height: 40px; background: #e8f5e9; color: #25D366; border-radius: 50%; align-items: center; justify-content: center; font-size: 22px; }
 
          
         .sidenav { height: 100%; width: 260px; position: fixed; z-index: 2000; top: 0; left: -260px; background-color: white; overflow-x: hidden; transition: 0.3s; box-shadow: 2px 0 15px rgba(0,0,0,0.2); padding-top: 20px; }
-        .sidenav .closebtn { position: absolute; top: 10px; right: 15px; font-size: 24px; color: #666; cursor: pointer; }
-        .sidenav-logo { text-align: center; padding-bottom: 20px; border-bottom: 1px solid #eee; margin-bottom: 10px; }
-        .sidenav-logo img { width: 80px; height: 80px; border-radius: 50%; border: 2px solid var(--primary); }
+        .sidenav .closebtn { position: absolute; top: 10px; right: 15px; font-size: 28px; color: #666; cursor: pointer; }
+        .sidenav-logo { text-align: center; padding-bottom: 15px; border-bottom: 1px solid #eee; margin-bottom: 10px; }
+        .sidenav-logo img { width: 70px; height: 70px; border-radius: 50%; border: 2px solid var(--primary); }
         .sidenav a { padding: 12px 20px; text-decoration: none; font-size: 16px; color: #333; display: block; transition: 0.2s; font-weight: 600; border-bottom: 1px solid #f5f5f5;}
         .sidenav a i { width: 25px; color: var(--primary); }
         .sidenav a:hover { background-color: #f8f9fa; color: var(--primary); }
-        #menuOverlay { position: fixed; display: none; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.5); z-index: 1500; cursor: pointer; }
+        #menuOverlay { position: fixed; display: none; width: 100%; height: 100%; top: 0; left: 0; background-color: rgba(0,0,0,0.6); z-index: 1500; cursor: pointer; }
 
          
-        .slider-container { width: 100%; max-width: 1000px; margin: 15px auto; overflow: hidden; position: relative; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        .slides { display: flex; transition: transform 0.5s ease-in-out; }
+        .slider-container { width: 100%; max-width: 1000px; margin: 15px auto; overflow: hidden; position: relative; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); background: white; }
+        .slides { display: flex; transition: transform 0.5s ease-in-out; width: 100%; }
         .slide { min-width: 100%; }
         .slide img { width: 100%; height: 200px; object-fit: cover; display: block; }
         @media(min-width: 768px) { .slide img { height: 350px; } }
 
          
-        .features-row { display: flex; gap: 15px; overflow-x: auto; padding: 15px 0; margin: 10px 0; scrollbar-width: none; }
+        .section-card { background: white; border-radius: 12px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        .section-title { font-size: 18px; font-weight: 700; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; color: #222; border-bottom: 2px solid #f0f2f5; padding-bottom: 8px;}
+        .section-title i { color: var(--primary); }
+
+         
+        .features-row { display: flex; gap: 15px; overflow-x: auto; padding: 10px 0; margin-bottom: 20px; scrollbar-width: none; }
         .features-row::-webkit-scrollbar { display: none; }
         .feature-card { background: white; padding: 10px 15px; border-radius: 50px; display: flex; align-items: center; gap: 8px; white-space: nowrap; font-size: 14px; font-weight: 600; color: var(--primary); box-shadow: 0 2px 5px rgba(0,0,0,0.05); border: 1px solid #eee; }
 
          
-        .section-card { background: white; border-radius: 12px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
-        .section-title { font-size: 18px; font-weight: 700; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; color: #222; }
-        .section-title i { color: var(--primary); }
-
-         
-        .category-title { background: var(--primary); color: white; display: inline-block; padding: 5px 15px; border-radius: 8px 8px 0 0; font-size: 16px; margin-top: 20px; font-weight: bold; }
-        .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 15px; background: white; padding: 15px; border-radius: 0 8px 8px 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
-        @media(min-width: 768px) { .products-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); } }
+        .category-title { background: var(--primary); color: white; display: inline-block; padding: 5px 15px; border-radius: 8px 8px 0 0; font-size: 16px; margin-top: 10px; font-weight: bold; }
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; background: white; padding: 15px; border-radius: 0 8px 8px 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin-bottom: 20px;}
+        @media(min-width: 768px) { .products-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 15px; } }
         
         .product-card { border: 1px solid #eee; border-radius: 10px; overflow: hidden; background: #fff; display: flex; flex-direction: column; transition: 0.3s; }
-        .product-card:hover { box-shadow: 0 5px 15px rgba(0,0,0,0.1); transform: translateY(-3px); }
-        .product-img { width: 100%; height: 140px; object-fit: cover; background: #f8f9fa; }
-        .product-info { padding: 12px; flex: 1; display: flex; flex-direction: column; }
-        .product-name { font-size: 15px; font-weight: 700; color: #222; margin-bottom: 5px; line-height: 1.3; }
-        .product-price { font-size: 16px; font-weight: 700; color: var(--primary); margin-bottom: 5px; }
-        .product-desc { font-size: 12px; color: var(--text-light); margin-bottom: 15px; flex: 1; line-height: 1.4; }
-        
+        .product-card:hover { box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .product-img { width: 100%; height: 140px; object-fit: cover; background: #f8f9fa; border-bottom: 1px solid #eee;}
+        .product-info { padding: 10px; flex: 1; display: flex; flex-direction: column; }
+        .product-name { font-size: 14px; font-weight: 700; color: #222; margin-bottom: 5px; line-height: 1.3; }
+        .product-price { font-size: 15px; font-weight: 700; color: var(--primary); margin-bottom: 5px; }
+        .product-desc { font-size: 11px; color: var(--text-light); margin-bottom: 10px; flex: 1; line-height: 1.4; }
         .btn-whatsapp { background: #25D366; color: white; text-align: center; padding: 8px; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer; border: none; width: 100%; display: flex; align-items: center; justify-content: center; gap: 6px; }
 
          
-        .form-group { margin-bottom: 15px; }
-        .form-group label { display: block; font-size: 14px; margin-bottom: 5px; font-weight: 600; color: #444; }
-        .form-control { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 6px; font-family: inherit; font-size: 15px; }
+        .form-group { margin-bottom: 12px; }
+        .form-group label { display: block; font-size: 13px; margin-bottom: 5px; font-weight: 600; color: #444; }
+        .form-control { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 6px; font-family: inherit; font-size: 14px; background: #fafafa;}
+        .form-control:focus { outline: none; border-color: var(--primary); background: white;}
         .btn-submit { background: var(--primary); color: white; border: none; padding: 12px; width: 100%; border-radius: 6px; font-size: 16px; font-weight: bold; cursor: pointer; display: flex; justify-content: center; align-items: center; gap: 8px; }
 
          
         details { background: #f8f9fa; margin-bottom: 10px; border-radius: 8px; border: 1px solid #eee; overflow: hidden; }
-        summary { padding: 15px; font-weight: 600; cursor: pointer; outline: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+        summary { padding: 15px; font-size: 15px; font-weight: 600; cursor: pointer; outline: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
         summary::-webkit-details-marker { display: none; }
-        summary:after { content: '\f107'; font-family: "Font Awesome 5 Free"; font-weight: 900; transition: transform 0.3s; }
+        summary:after { content: '\f107'; font-family: "Font Awesome 6 Free"; font-weight: 900; transition: transform 0.3s; color: #888;}
         details[open] summary:after { transform: rotate(180deg); color: var(--primary); }
         details[open] summary { border-bottom: 1px solid #eee; color: var(--primary); }
-        .faq-content { padding: 15px; color: #555; font-size: 14px; background: white; }
+        .faq-content { padding: 15px; color: #555; font-size: 14px; background: white; line-height: 1.6;}
 
          
         .contact-item { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 15px; font-size: 15px; }
-        .contact-item i { color: var(--primary); font-size: 18px; margin-top: 3px; }
-        .social-links { display: flex; gap: 15px; margin-top: 20px; }
+        .contact-item i { color: var(--primary); font-size: 18px; margin-top: 3px; width: 20px; text-align: center;}
+        .social-links { display: flex; gap: 15px; margin-top: 20px; border-top: 1px solid #eee; padding-top: 15px;}
         .social-links a { width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px; }
-        .s-fb { background: #1877F2; } .s-ig { background: #E4405F; } .s-yt { background: #FF0000; }
 
          
-        .footer { text-align: center; padding: 20px; color: #777; font-size: 13px; margin-top: 20px; }
-        
+        .popup-modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 3000; align-items: center; justify-content: center; padding: 15px;}
+        .popup-content { background: white; width: 100%; max-width: 350px; border-radius: 12px; text-align: center; position: relative; animation: popIn 0.3s ease-out;}
+        @keyframes popIn { from { transform: scale(0.8); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+        .popup-header { background: #d35400; color: white; padding: 20px 15px; font-size: 20px; font-weight: bold; border-radius: 12px 12px 0 0;}
+        .popup-body { padding: 25px 20px; font-size: 15px; color: #444; }
+        .popup-close { position: absolute; top: -10px; right: -10px; background: white; color: red; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.3); border: 1px solid #eee;}
+
+         
         .install-banner { position: fixed; bottom: 0; left: 0; width: 100%; background: #fff; padding: 12px 20px; display: none; align-items: center; justify-content: space-between; box-shadow: 0 -4px 15px rgba(0,0,0,0.1); z-index: 1000; border-top: 3px solid var(--primary); }
         .install-btn { background: var(--primary); color: white; border: none; padding: 8px 15px; border-radius: 20px; font-size: 12px; font-weight: bold; cursor: pointer; }
 
          
-        .floating-action { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: 0 4px 10px rgba(37, 211, 102, 0.4); z-index: 1000; }
-        
-         
-        .popup-modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 3000; align-items: center; justify-content: center; padding: 15px;}
-        .popup-content { background: white; width: 100%; max-width: 350px; border-radius: 12px; text-align: center; position: relative; overflow: hidden; animation: popIn 0.4s ease-out;}
-        @keyframes popIn { from { transform: scale(0.8); opacity: 0; } to { transform: scale(1); opacity: 1; } }
-        .popup-header { background: #d35400; color: white; padding: 15px; font-size: 18px; font-weight: bold; }
-        .popup-body { padding: 25px 20px; font-size: 15px; color: #444; }
-        .popup-close { position: absolute; top: 10px; right: 15px; color: white; font-size: 20px; cursor: pointer; }
+        .floating-action { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; box-shadow: 0 4px 10px rgba(37, 211, 102, 0.4); z-index: 900; }
     </style>
 </head>
 <body>
@@ -153,27 +154,26 @@
         <span class="closebtn" onclick="closeNav()">&times;</span>
         <div class="sidenav-logo">
             <img src="https://vedchitrakolhapur.github.io/smartbiz/assets/img_490834.webp" alt="Logo">
-            <h3 style="margin-top:10px; color:var(--primary);">Gavathi Shetmal</h3>
+            <h3 style="margin-top:10px; color:var(--primary); font-size:16px;">Gavathi Shetmal</h3>
         </div>
         <a href="#home" onclick="closeNav()"><i class="fas fa-home"></i> होम (Home)</a>
-        <a href="#products" onclick="closeNav()"><i class="fas fa-box-open"></i> उत्पादने (Products)</a>
-        <a href="#features" onclick="closeNav()"><i class="fas fa-star"></i> वैशिष्ट्ये (Features)</a>
-        <a href="#enquiry" onclick="closeNav()"><i class="fas fa-envelope-open-text"></i> चौकशी करा</a>
-        <a href="#faq" onclick="closeNav()"><i class="fas fa-question-circle"></i> प्रश्नोत्तरे (FAQ)</a>
         <a href="#about" onclick="closeNav()"><i class="fas fa-info-circle"></i> आमच्याबद्दल</a>
+        <a href="#products" onclick="closeNav()"><i class="fas fa-box-open"></i> उत्पादने (Products)</a>
         <a href="#contact" onclick="closeNav()"><i class="fas fa-phone-alt"></i> संपर्क (Contact)</a>
+        <a href="#enquiry" onclick="closeNav()"><i class="fas fa-envelope-open-text"></i> ऑनलाइन चौकशी</a>
+        <a href="#faq" onclick="closeNav()"><i class="fas fa-question-circle"></i> प्रश्नोत्तरे (FAQ)</a>
     </div>
 
     <header class="header" id="home">
-        <div class="container header-content">
+        <div class="header-content">
             <div class="header-left">
                 <div class="menu-btn" onclick="openNav()"><i class="fas fa-bars"></i></div>
                 <div class="brand">
                                             <img src="https://vedchitrakolhapur.github.io/smartbiz/assets/img_490834.webp" alt="Logo">
                                         <div class="brand-text">
                         <h1>गावठी शेतमाल</h1>
-                                                    <p>Gavathi Shetmal</p>
-                                            </div>
+                        <p>Gavathi Shetmal</p>
+                    </div>
                 </div>
             </div>
             <div class="header-actions">
@@ -190,6 +190,14 @@
                                     <div class="slide"><img src="https://vedchitrakolhapur.github.io/smartbiz/assets/img_111933.webp"></div>
                             </div>
         </div>
+        
+                <div class="section-card" id="about">
+            <h2 class="section-title"><i class="fas fa-address-card"></i> आमच्याबद्दल</h2>
+            <p style="white-space: pre-wrap; font-size:14px;">तुम्ही सुरुवातीला या लिंकवर तुमची पूर्ण वेबसाईट टेस्ट करू शकता. सर्व डिझाईन आणि प्रॉडक्ट्स व्यवस्थित दिसू लागल्यानंतर, तुम्ही कधीही GoDaddy किंवा Hostinger वरून gavathishetmal.com डोमेन घेऊन ते GitHub ला कनेक्ट करू शकता. डोमेन कनेक्ट झाल्यावर फक्त CUSTOM_DOMAIN मध्ये gavathishetmal.com टाकायचे, 
+
+आणि सर्व काही आधीसारखेच काम करेल.</p>
+                            <p style="margin-top: 15px; font-weight:bold; color:var(--primary);">संचालक: श्री. राम पाटील </p>
+                    </div>
         
                 <div class="features-row" id="features">
                             <div class="feature-card"><i class="fas fa-check-circle"></i> १००% नैसर्गिक</div>
@@ -247,7 +255,19 @@
                                             </div>
                                             </div>
 
-        <div class="section-card" id="enquiry" style="margin-top: 30px;">
+        <div class="section-card" id="contact">
+            <h2 class="section-title"><i class="fas fa-map-marker-alt"></i> संपर्क माहिती</h2>
+            
+                            <div class="contact-item"><i class="fas fa-home"></i> <div>नंतर, सिस्टीम आपोआप GitHub Pages ची डीफॉल्ट लिंक जनरेट करेल आणि सेव्ह करेल.</div></div>
+                        
+                            <div class="contact-item"><i class="fas fa-phone-alt"></i> <div><a href="tel:7498663848" style="font-weight:bold; color:var(--primary);">7498663848</a></div></div>
+            
+                            <div class="social-links">
+                    <a href="#" target="_blank" class="s-fb" style="background:#1877F2;"><i class="fab fa-facebook-f"></i></a>                    <a href="#" target="_blank" class="s-ig" style="background:#E4405F;"><i class="fab fa-instagram"></i></a>                    <a href="#" target="_blank" class="s-yt" style="background:#FF0000;"><i class="fab fa-youtube"></i></a>                </div>
+            
+                    </div>
+
+        <div class="section-card" id="enquiry">
             <h2 class="section-title"><i class="fas fa-envelope-open-text"></i> ऑनलाइन चौकशी करा</h2>
             <div class="form-group">
                 <label>तुमचे नाव:</label>
@@ -276,29 +296,9 @@
                 </details>
                     </div>
         
-                <div class="section-card" id="about">
-            <h2 class="section-title"><i class="fas fa-address-card"></i> आमच्याबद्दल</h2>
-            <p style="white-space: pre-wrap; font-size:15px;">तुम्ही सुरुवातीला या लिंकवर तुमची पूर्ण वेबसाईट टेस्ट करू शकता. सर्व डिझाईन आणि प्रॉडक्ट्स व्यवस्थित दिसू लागल्यानंतर, तुम्ही कधीही GoDaddy किंवा Hostinger वरून gavathishetmal.com डोमेन घेऊन ते GitHub ला कनेक्ट करू शकता. डोमेन कनेक्ट झाल्यावर फक्त CUSTOM_DOMAIN मध्ये gavathishetmal.com टाकायचे, 
-
-आणि सर्व काही आधीसारखेच काम करेल.</p>
-                            <p style="margin-top: 15px; font-weight:bold; color:var(--primary);">संचालक: श्री. राम पाटील </p>
-                    </div>
-        
-        <div class="section-card" id="contact">
-            <h2 class="section-title"><i class="fas fa-map-marker-alt"></i> संपर्क माहिती</h2>
-            
-                            <div class="contact-item"><i class="fas fa-home"></i> <div>नंतर, सिस्टीम आपोआप GitHub Pages ची डीफॉल्ट लिंक जनरेट करेल आणि सेव्ह करेल.</div></div>
-                        
-                            <div class="contact-item"><i class="fas fa-phone-alt"></i> <div><a href="tel:7498663848">7498663848</a></div></div>
-            
-                            <div class="social-links">
-                    <a href="#" target="_blank" class="s-fb"><i class="fab fa-facebook-f"></i></a>                    <a href="#" target="_blank" class="s-ig"><i class="fab fa-instagram"></i></a>                    <a href="#" target="_blank" class="s-yt"><i class="fab fa-youtube"></i></a>                </div>
-            
-                    </div>
-
     </div>
 
-    <footer class="footer">
+    <footer style="text-align: center; padding: 20px; color: #777; font-size: 13px; margin-top: 20px;">
         &copy; 2026 Gavathi Shetmal. All Rights Reserved.
     </footer>
 
@@ -313,10 +313,12 @@
         function openNav() {
             document.getElementById("sideMenu").style.left = "0";
             document.getElementById("menuOverlay").style.display = "block";
+            document.body.style.overflow = "hidden"; 
         }
         function closeNav() {
             document.getElementById("sideMenu").style.left = "-260px";
             document.getElementById("menuOverlay").style.display = "none";
+            document.body.style.overflow = "auto";
         }
 
         
@@ -324,7 +326,7 @@
         const slider = document.getElementById('slider');
         const slides = document.querySelectorAll('.slide');
         
-        if(slides.length > 1) {
+        if(slider && slides.length > 1) {
             setInterval(() => {
                 slideIndex++;
                 if (slideIndex >= slides.length) slideIndex = 0;
@@ -335,14 +337,19 @@
         
         window.onload = function() {
             let modal = document.getElementById('offerModal');
-            let popupKey = 'popupShown_Gavathi Shetmal';
+            let popupKey = 'popupClosed_Gavathi Shetmal';
+            
+            
             if(modal && !sessionStorage.getItem(popupKey)) {
-                setTimeout(() => { modal.style.display = 'flex'; }, 1500);
+                setTimeout(() => { 
+                    modal.style.display = 'flex'; 
+                }, 60000); 
             }
         };
+        
         function closePopup() {
             document.getElementById('offerModal').style.display = 'none';
-            sessionStorage.setItem('popupShown_Gavathi Shetmal', 'true'); 
+            sessionStorage.setItem('popupClosed_Gavathi Shetmal', 'true'); 
         }
 
         
@@ -371,13 +378,14 @@
         const installBanner = document.getElementById('installBanner');
         const installBtn = document.getElementById('installBtn');
 
+        
         if (window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true) {
             installBanner.style.display = 'none';
         } else {
             window.addEventListener('beforeinstallprompt', (e) => {
                 e.preventDefault();
                 deferredPrompt = e;
-                installBanner.style.display = 'flex';
+                installBanner.style.display = 'flex'; 
             });
         }
 
@@ -387,9 +395,12 @@
                 deferredPrompt.prompt();
                 const { outcome } = await deferredPrompt.userChoice;
                 deferredPrompt = null;
+            } else {
+                alert("तुमच्या ब्राउझरच्या मेन्यूमधून (3 dots) 'Install App' किंवा 'Add to Home screen' निवडा.");
             }
         });
 
+        
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('service-worker.js').catch(err => console.log(err));
         }
