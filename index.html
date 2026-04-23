@@ -5,17 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Gavathi Shetmal</title>
-    <meta name="description" content="शिवारातून थेट ताटात ..">
-    <meta name="keywords" content="गावठी शेतमाल, fresh vegetables, organic fruits, buy online, गावठी शेतमाल, H No - 22/2, Harpavade, Ajara Tal: Ajara, Dist: Kolhapur Maharashtra">
+    <meta name="description" content="शिवारातून थेट ताटात ...">
+    <meta name="keywords" content="गावठी शेतमाल, Gavathi Shetmal, Fresh Vegetables Mumbai, Ajara Ghansal Rice, Organic Products Kolhapur">
     <meta name="theme-color" content="#28a745">
     
-    <meta name="google-site-verification" content="YOUR_GOOGLE_SEARCH_CONSOLE_CODE_HERE" />
+    <meta name="google-site-verification" content="YOUR_SEARCH_CONSOLE_CODE_HERE" />
 
     <link rel="icon" type="image/png" href="https://gavathishetmal.com/assets/img_670175.webp">
     <link rel="apple-touch-icon" href="https://gavathishetmal.com/assets/img_670175.webp">
-    
     <meta property="og:title" content="गावठी शेतमाल">
-    <meta property="og:description" content="शिवारातून थेट ताटात ..">
+    <meta property="og:description" content="शिवारातून थेट ताटात ...">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://gavathishetmal.com/assets/img_128735.webp">
 
@@ -25,12 +24,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700&amp;display=swap" rel="stylesheet">
 
     <style>
-         
         :root {
             --primary: #28a745;
             --text-dark: #333;
             --text-light: #666;
-            --bg-light: #f8f9fa;
+            --card-bg: #ffffff;
         }
         
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Mukta', sans-serif;}
@@ -50,26 +48,25 @@
         .header-actions a { display: inline-flex; width: 40px; height: 40px; background: #e8f5e9; color: #25D366; border-radius: 50%; align-items: center; justify-content: center; font-size: 22px; }
 
          
-        .sidenav { height: 100%; width: 260px; position: fixed; z-index: 2000; top: 0; left: -260px; background-color: white; overflow-x: hidden; transition: 0.3s; box-shadow: 2px 0 15px rgba(0,0,0,0.2); padding-top: 20px; }
+        .sidenav { height: 100%; width: 260px; position: fixed; z-index: 2000; top: 0; left: -260px; background-color: white; transition: 0.3s; box-shadow: 2px 0 15px rgba(0,0,0,0.2); padding-top: 20px; }
         .sidenav .closebtn { position: absolute; top: 10px; right: 15px; font-size: 28px; color: #666; cursor: pointer; }
         .sidenav-logo { text-align: center; padding-bottom: 15px; border-bottom: 1px solid #eee; margin-bottom: 10px; }
         .sidenav-logo img { width: 70px; height: 70px; border-radius: 50%; border: 2px solid var(--primary); }
-        .sidenav a { padding: 12px 20px; text-decoration: none; font-size: 16px; color: #333; display: block; transition: 0.2s; font-weight: 600; border-bottom: 1px solid #f5f5f5;}
+        .sidenav a { padding: 12px 20px; text-decoration: none; font-size: 16px; color: #333; display: block; font-weight: 600; border-bottom: 1px solid #f5f5f5;}
         .sidenav a i { width: 25px; color: var(--primary); }
-        .sidenav a:hover { background-color: #f8f9fa; color: var(--primary); }
         #menuOverlay { position: fixed; display: none; width: 100%; height: 100%; top: 0; left: 0; background-color: rgba(0,0,0,0.6); z-index: 1500; cursor: pointer; }
 
          
-        .slider-container { width: 100%; max-width: 1000px; margin: 15px auto; overflow: hidden; position: relative; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); background: white; }
+        .section-card { background: var(--card-bg); border-radius: 12px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        .section-title { font-size: 18px; font-weight: 700; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; color: #222; border-bottom: 2px solid #f0f2f5; padding-bottom: 8px;}
+        .section-title i { color: var(--primary); }
+
+         
+        .slider-container { width: 100%; margin: 15px auto; overflow: hidden; position: relative; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); background: white; }
         .slides { display: flex; transition: transform 0.5s ease-in-out; width: 100%; }
         .slide { min-width: 100%; }
         .slide img { width: 100%; height: 200px; object-fit: cover; display: block; }
         @media(min-width: 768px) { .slide img { height: 350px; } }
-
-         
-        .section-card { background: white; border-radius: 12px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
-        .section-title { font-size: 18px; font-weight: 700; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; color: #222; border-bottom: 2px solid #f0f2f5; padding-bottom: 8px;}
-        .section-title i { color: var(--primary); }
 
          
         .features-row { display: flex; gap: 15px; overflow-x: auto; padding: 10px 0; margin-bottom: 20px; scrollbar-width: none; }
@@ -79,26 +76,25 @@
          
         .category-title { background: var(--primary); color: white; display: inline-block; padding: 5px 15px; border-radius: 8px 8px 0 0; font-size: 16px; margin-top: 10px; font-weight: bold; }
         .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; background: white; padding: 15px; border-radius: 0 8px 8px 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin-bottom: 20px;}
-        @media(min-width: 768px) { .products-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 15px; } }
-        
+        @media(min-width: 768px) { .products-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); } }
         .product-card { border: 1px solid #eee; border-radius: 10px; overflow: hidden; background: #fff; display: flex; flex-direction: column; transition: 0.3s; }
         .product-card:hover { box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
         .product-img { width: 100%; height: 140px; object-fit: cover; background: #f8f9fa; border-bottom: 1px solid #eee;}
         .product-info { padding: 10px; flex: 1; display: flex; flex-direction: column; }
-        .product-name { font-size: 14px; font-weight: 700; color: #222; margin-bottom: 5px; line-height: 1.3; }
+        .product-name { font-size: 14px; font-weight: 700; color: #222; margin-bottom: 5px; }
         .product-price { font-size: 15px; font-weight: 700; color: var(--primary); margin-bottom: 5px; }
-        .product-desc { font-size: 11px; color: var(--text-light); margin-bottom: 10px; flex: 1; line-height: 1.4; }
-        
+        .product-desc { font-size: 11px; color: var(--text-light); margin-bottom: 10px; flex: 1; }
+
          
-        .btn-whatsapp { background: #25D366; color: white; text-align: center; padding: 8px; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer; border: none; width: 100%; display: flex; align-items: center; justify-content: center; gap: 6px; text-decoration: none; }
-        .btn-whatsapp:hover { opacity: 0.9; color: white; }
+        .btn-whatsapp { background: #25D366; color: white; text-align: center; padding: 8px; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer; border: none; width: 100%; display: flex; align-items: center; justify-content: center; gap: 6px; text-decoration: none;}
+        .btn-whatsapp:hover { opacity: 0.9; }
+        .btn-submit { background: var(--primary); color: white; border: none; padding: 12px; width: 100%; border-radius: 6px; font-size: 16px; font-weight: bold; cursor: pointer; display: flex; justify-content: center; align-items: center; gap: 8px;}
 
          
         .form-group { margin-bottom: 12px; }
         .form-group label { display: block; font-size: 13px; margin-bottom: 5px; font-weight: 600; color: #444; }
-        .form-control { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 6px; font-family: inherit; font-size: 14px; background: #fafafa;}
+        .form-control { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 6px; font-size: 14px; background: #fafafa;}
         .form-control:focus { outline: none; border-color: var(--primary); background: white;}
-        .btn-submit { background: var(--primary); color: white; border: none; padding: 12px; width: 100%; border-radius: 6px; font-size: 16px; font-weight: bold; cursor: pointer; display: flex; justify-content: center; align-items: center; gap: 8px; }
 
          
         details { background: #f8f9fa; margin-bottom: 10px; border-radius: 8px; border: 1px solid #eee; overflow: hidden; }
@@ -107,8 +103,6 @@
         summary:after { content: '\f107'; font-family: "Font Awesome 6 Free"; font-weight: 900; transition: transform 0.3s; color: #888;}
         details[open] summary:after { transform: rotate(180deg); color: var(--primary); }
         details[open] summary { border-bottom: 1px solid #eee; color: var(--primary); }
-        
-         
         .faq-content { padding: 15px; color: #555; font-size: 14px; background: white; line-height: 1.6; white-space: pre-wrap; }
 
          
@@ -130,6 +124,15 @@
         .install-btn { background: var(--primary); color: white; border: none; padding: 8px 15px; border-radius: 20px; font-size: 12px; font-weight: bold; cursor: pointer; }
 
          
+        #appInstallCard { background: linear-gradient(135deg, var(--primary) 0%, #1e7e34 100%); color: white; padding: 25px; border-radius: 15px; margin-top: 30px; text-align: center; box-shadow: 0 10px 20px rgba(0,0,0,0.15); display: none; }
+        .app-icon { width: 80px; height: 80px; border-radius: 18px; margin-bottom: 15px; background: white; padding: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+        .app-features-list { text-align: left; display: inline-block; margin: 15px 0; font-size: 14px; }
+        .app-features-list div { margin-bottom: 5px; }
+        .app-features-list i { margin-right: 8px; color: #ffeb3b; }
+        .install-btn-large { background: #ffffff; color: var(--primary); border: none; padding: 12px 30px; border-radius: 30px; font-size: 16px; font-weight: 700; cursor: pointer; text-transform: uppercase; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: 0.3s; }
+        .install-btn-large:hover { transform: scale(1.05); background: #f8f9fa; }
+
+         
         .floating-action { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; box-shadow: 0 4px 10px rgba(37, 211, 102, 0.4); z-index: 900; }
     </style>
 </head>
@@ -149,7 +152,7 @@
             <div class="popup-header"><i class="fas fa-gift"></i> एप्रिल धमाका ..</div>
             <div class="popup-body">
                 <p style="white-space: pre-wrap;">सर्व उत्पादनावर 5% खास सूट ..</p>
-                <button class="btn-whatsapp" style="margin-top:20px; font-size:14px; background:var(--primary);" onclick="closePopup()">Ok, Thanks!</button>
+                <button class="btn-whatsapp" style="margin-top:20px; background:var(--primary);" onclick="closePopup()">Ok, Thanks!</button>
             </div>
         </div>
     </div>
@@ -199,7 +202,7 @@
             <h2 class="section-title"><i class="fas fa-address-card"></i> आमच्याबद्दल</h2>
             <p style="white-space: pre-wrap; font-size:14px;">अस्सल गावरान चव, थेट शेतकऱ्याच्या बांधावरून!
 &#39;गावठी शेतमाल&#39; हे केवळ एक नाव नसून, कोल्हापूरच्या मातीतील शुद्धता आणि आरोग्याची ती एक खात्री आहे. आजरा, चंदगड आणि गडहिंग्लज या निसर्गरम्य परिसरातील शेतकऱ्यांच्या कष्टाने पिकलेला 100% नैसर्गिक आणि ताजा शेतमाल आम्ही थेट मुंबईत तुमच्या दारापर्यंत पोहोचवतो.</p>
-                            <p style="margin-top: 15px; font-weight:bold; color:var(--primary);">Proprietor: श्री. नितीन शिवाजी मळेकर</p>
+                            <p style="margin-top: 15px; font-weight:bold; color:var(--primary);">संचालक: श्री. नितीन शिवाजी मळेकर</p>
                     </div>
         
                 <div class="features-row" id="features">
@@ -280,7 +283,7 @@
                             <div class="contact-item"><i class="fas fa-phone-alt"></i> <div><a href="tel:9011147755" style="font-weight:bold; color:var(--primary);">9011147755</a></div></div>
             
                             <div class="social-links">
-                    <a href="#" target="_blank" class="s-fb" style="background:#1877F2;"><i class="fab fa-facebook-f"></i></a>                    <a href="https://instagram.com/gavathishetmal" target="_blank" class="s-ig" style="background:#E4405F;"><i class="fab fa-instagram"></i></a>                    <a href="https://www.youtube.com/@GavathiShetmal" target="_blank" class="s-yt" style="background:#FF0000;"><i class="fab fa-youtube"></i></a>                </div>
+                    <a href="#" target="_blank" class="s-fb"><i class="fab fa-facebook-f"></i></a>                    <a href="https://instagram.com/gavathishetmal" target="_blank" class="s-ig"><i class="fab fa-instagram"></i></a>                    <a href="https://www.youtube.com/@GavathiShetmal" target="_blank" class="s-yt"><i class="fab fa-youtube"></i></a>                </div>
             
                     </div>
 
@@ -349,9 +352,25 @@ Website: https://gavathishetmal.com/</div>
                 </details>
                     </div>
         
-    </div>
+        <div id="appInstallCard">
+            <img src="https://gavathishetmal.com/assets/img_670175.webp" class="app-icon" alt="App Icon">
+            <h2>Gavathi Shetmal ॲप इन्स्टॉल करा</h2>
+            <p>आमच्यासोबत जोडलेले राहण्यासाठी आणि ताज्या अपडेट्ससाठी आमचे अधिकृत ॲप डाऊनलोड करा.</p>
+            
+            <div class="app-features-list">
+                <div><i class="fas fa-bolt"></i> जलद आणि सोपी ऑर्डर प्रक्रिया</div>
+                <div><i class="fas fa-bell"></i> नवीन उत्पादनांच्या सूचना (Notifications)</div>
+                <div><i class="fas fa-mobile-alt"></i> एका क्लिकवर सर्व माहिती</div>
+            </div>
+            
+            <div style="margin-top:10px;">
+                <button id="installBtnLarge" class="install-btn-large">
+                    <i class="fas fa-download"></i> Install Our App
+                </button>
+            </div>
+        </div>
 
-    <footer style="text-align: center; padding: 20px; color: #777; font-size: 13px; margin-top: 20px;">
+    </div> <footer style="text-align: center; padding: 20px; color: #777; font-size: 13px; margin-top: 20px;">
         &copy; 2026 Gavathi Shetmal. All Rights Reserved.
     </footer>
 
@@ -398,6 +417,14 @@ Website: https://gavathishetmal.com/</div>
                     modal.style.display = 'flex'; 
                 }, 60000); 
             }
+
+            
+            if (window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true) {
+                let card = document.getElementById('appInstallCard');
+                let banner = document.getElementById('installBanner');
+                if(card) card.style.display = 'none';
+                if(banner) banner.style.display = 'none';
+            }
         };
         
         function closePopup() {
@@ -422,19 +449,23 @@ Website: https://gavathishetmal.com/</div>
         let deferredPrompt;
         const installBanner = document.getElementById('installBanner');
         const installBtn = document.getElementById('installBtn');
+        const appInstallCard = document.getElementById('appInstallCard');
+        const installBtnLarge = document.getElementById('installBtnLarge');
 
-        if (window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true) {
-            installBanner.style.display = 'none';
-        } else {
-            window.addEventListener('beforeinstallprompt', (e) => {
-                e.preventDefault();
-                deferredPrompt = e;
-                installBanner.style.display = 'flex';
-            });
-        }
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            
+            if (!(window.matchMedia('(display-mode: standalone)').matches)) {
+                if(installBanner) installBanner.style.display = 'flex';
+                if(appInstallCard) appInstallCard.style.display = 'block';
+            }
+        });
 
-        installBtn.addEventListener('click', async () => {
-            installBanner.style.display = 'none';
+        async function handleInstallClick() {
+            if(installBanner) installBanner.style.display = 'none';
+            if(appInstallCard) appInstallCard.style.display = 'none';
+
             if(deferredPrompt) {
                 deferredPrompt.prompt();
                 const { outcome } = await deferredPrompt.userChoice;
@@ -442,8 +473,18 @@ Website: https://gavathishetmal.com/</div>
             } else {
                 alert("तुमच्या ब्राउझरच्या मेन्यूमधून (3 dots) 'Install App' किंवा 'Add to Home screen' निवडा.");
             }
+        }
+
+        if(installBtn) installBtn.addEventListener('click', handleInstallClick);
+        if(installBtnLarge) installBtnLarge.addEventListener('click', handleInstallClick);
+
+        window.addEventListener('appinstalled', () => {
+            if(installBanner) installBanner.style.display = 'none';
+            if(appInstallCard) appInstallCard.style.display = 'none';
+            deferredPrompt = null;
         });
 
+        
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('service-worker.js').catch(err => console.log(err));
         }
