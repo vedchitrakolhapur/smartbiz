@@ -88,7 +88,10 @@
         .product-name { font-size: 14px; font-weight: 700; color: #222; margin-bottom: 5px; line-height: 1.3; }
         .product-price { font-size: 15px; font-weight: 700; color: var(--primary); margin-bottom: 5px; }
         .product-desc { font-size: 11px; color: var(--text-light); margin-bottom: 10px; flex: 1; line-height: 1.4; }
-        .btn-whatsapp { background: #25D366; color: white; text-align: center; padding: 8px; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer; border: none; width: 100%; display: flex; align-items: center; justify-content: center; gap: 6px; }
+        
+         
+        .btn-whatsapp { background: #25D366; color: white; text-align: center; padding: 8px; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer; border: none; width: 100%; display: flex; align-items: center; justify-content: center; gap: 6px; text-decoration: none; }
+        .btn-whatsapp:hover { opacity: 0.9; color: white; }
 
          
         .form-group { margin-bottom: 12px; }
@@ -145,7 +148,7 @@
             <span class="popup-close" onclick="closePopup()">&times;</span>
             <div class="popup-header"><i class="fas fa-gift"></i> एप्रिल धमाका ..</div>
             <div class="popup-body">
-                <p>सर्व उत्पादनावर 5% खास सूट ..</p>
+                <p style="white-space: pre-wrap;">सर्व उत्पादनावर 5% खास सूट ..</p>
                 <button class="btn-whatsapp" style="margin-top:20px; font-size:14px; background:var(--primary);" onclick="closePopup()">Ok, Thanks!</button>
             </div>
         </div>
@@ -196,7 +199,7 @@
             <h2 class="section-title"><i class="fas fa-address-card"></i> आमच्याबद्दल</h2>
             <p style="white-space: pre-wrap; font-size:14px;">अस्सल गावरान चव, थेट शेतकऱ्याच्या बांधावरून!
 &#39;गावठी शेतमाल&#39; हे केवळ एक नाव नसून, कोल्हापूरच्या मातीतील शुद्धता आणि आरोग्याची ती एक खात्री आहे. आजरा, चंदगड आणि गडहिंग्लज या निसर्गरम्य परिसरातील शेतकऱ्यांच्या कष्टाने पिकलेला 100% नैसर्गिक आणि ताजा शेतमाल आम्ही थेट मुंबईत तुमच्या दारापर्यंत पोहोचवतो.</p>
-                            <p style="margin-top: 15px; font-weight:bold; color:var(--primary);">संचालक: श्री. नितीन शिवाजी मळेकर</p>
+                            <p style="margin-top: 15px; font-weight:bold; color:var(--primary);">Proprietor: श्री. नितीन शिवाजी मळेकर</p>
                     </div>
         
                 <div class="features-row" id="features">
@@ -214,9 +217,9 @@
                                     <div class="product-name">मेथी भाजी </div>
                                                                         <div class="product-desc"></div>
                                     
-                                    <button class="btn-whatsapp" data-pname="मेथी भाजी " onclick="enquireProduct(this)">
+                                                                        <a href="https://wa.me/919011147755?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%BE%E0%A4%B0%2C%20%0A%E0%A4%AE%E0%A4%B2%E0%A4%BE%20*%27%E0%A4%AE%E0%A5%87%E0%A4%A5%E0%A5%80%20%E0%A4%AD%E0%A4%BE%E0%A4%9C%E0%A5%80%20%27*%20%E0%A4%AF%E0%A4%BE%E0%A4%AC%E0%A4%A6%E0%A5%8D%E0%A4%A6%E0%A4%B2%20%E0%A4%85%E0%A4%A7%E0%A4%BF%E0%A4%95%20%E0%A4%AE%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A5%80%20%E0%A4%B9%E0%A4%B5%E0%A5%80%20%E0%A4%86%E0%A4%B9%E0%A5%87." target="_blank" class="btn-whatsapp">
                                         <i class="fab fa-whatsapp"></i> चौकशी करा
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                                                     <div class="product-card">
@@ -225,9 +228,9 @@
                                     <div class="product-name">चकावत भाजी </div>
                                                                         <div class="product-desc"></div>
                                     
-                                    <button class="btn-whatsapp" data-pname="चकावत भाजी " onclick="enquireProduct(this)">
+                                                                        <a href="https://wa.me/919011147755?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%BE%E0%A4%B0%2C%20%0A%E0%A4%AE%E0%A4%B2%E0%A4%BE%20*%27%E0%A4%9A%E0%A4%95%E0%A4%BE%E0%A4%B5%E0%A4%A4%20%E0%A4%AD%E0%A4%BE%E0%A4%9C%E0%A5%80%20%27*%20%E0%A4%AF%E0%A4%BE%E0%A4%AC%E0%A4%A6%E0%A5%8D%E0%A4%A6%E0%A4%B2%20%E0%A4%85%E0%A4%A7%E0%A4%BF%E0%A4%95%20%E0%A4%AE%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A5%80%20%E0%A4%B9%E0%A4%B5%E0%A5%80%20%E0%A4%86%E0%A4%B9%E0%A5%87." target="_blank" class="btn-whatsapp">
                                         <i class="fab fa-whatsapp"></i> चौकशी करा
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                                             </div>
@@ -239,20 +242,20 @@
                                     <div class="product-name">हापूस आंबा </div>
                                                                         <div class="product-desc"></div>
                                     
-                                    <button class="btn-whatsapp" data-pname="हापूस आंबा " onclick="enquireProduct(this)">
+                                                                        <a href="https://wa.me/919011147755?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%BE%E0%A4%B0%2C%20%0A%E0%A4%AE%E0%A4%B2%E0%A4%BE%20*%27%E0%A4%B9%E0%A4%BE%E0%A4%AA%E0%A5%82%E0%A4%B8%20%E0%A4%86%E0%A4%82%E0%A4%AC%E0%A4%BE%20%27*%20%E0%A4%AF%E0%A4%BE%E0%A4%AC%E0%A4%A6%E0%A5%8D%E0%A4%A6%E0%A4%B2%20%E0%A4%85%E0%A4%A7%E0%A4%BF%E0%A4%95%20%E0%A4%AE%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A5%80%20%E0%A4%B9%E0%A4%B5%E0%A5%80%20%E0%A4%86%E0%A4%B9%E0%A5%87." target="_blank" class="btn-whatsapp">
                                         <i class="fab fa-whatsapp"></i> चौकशी करा
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                                                     <div class="product-card">
                                                                     <img src="https://gavathishetmal.com/assets/img_458979.webp" class="product-img" loading="lazy">
                                                                 <div class="product-info">
                                     <div class="product-name">काजूगर </div>
-                                                                        <div class="product-desc"></div>
+                                                                        <div class="product-desc">उत्तम प्रतीचे काजूगर </div>
                                     
-                                    <button class="btn-whatsapp" data-pname="काजूगर " onclick="enquireProduct(this)">
+                                                                        <a href="https://wa.me/919011147755?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%BE%E0%A4%B0%2C%20%0A%E0%A4%AE%E0%A4%B2%E0%A4%BE%20*%27%E0%A4%95%E0%A4%BE%E0%A4%9C%E0%A5%82%E0%A4%97%E0%A4%B0%20%27*%20%E0%A4%AF%E0%A4%BE%E0%A4%AC%E0%A4%A6%E0%A5%8D%E0%A4%A6%E0%A4%B2%20%E0%A4%85%E0%A4%A7%E0%A4%BF%E0%A4%95%20%E0%A4%AE%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A5%80%20%E0%A4%B9%E0%A4%B5%E0%A5%80%20%E0%A4%86%E0%A4%B9%E0%A5%87." target="_blank" class="btn-whatsapp">
                                         <i class="fab fa-whatsapp"></i> चौकशी करा
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                                                     <div class="product-card">
@@ -261,9 +264,9 @@
                                     <div class="product-name">फणस </div>
                                                                         <div class="product-desc"></div>
                                     
-                                    <button class="btn-whatsapp" data-pname="फणस " onclick="enquireProduct(this)">
+                                                                        <a href="https://wa.me/919011147755?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%BE%E0%A4%B0%2C%20%0A%E0%A4%AE%E0%A4%B2%E0%A4%BE%20*%27%E0%A4%AB%E0%A4%A3%E0%A4%B8%20%27*%20%E0%A4%AF%E0%A4%BE%E0%A4%AC%E0%A4%A6%E0%A5%8D%E0%A4%A6%E0%A4%B2%20%E0%A4%85%E0%A4%A7%E0%A4%BF%E0%A4%95%20%E0%A4%AE%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A5%80%20%E0%A4%B9%E0%A4%B5%E0%A5%80%20%E0%A4%86%E0%A4%B9%E0%A5%87." target="_blank" class="btn-whatsapp">
                                         <i class="fab fa-whatsapp"></i> चौकशी करा
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                                             </div>
@@ -357,13 +360,14 @@ Website: https://gavathishetmal.com/</div>
     </a>
     
     <script>
-        const waNumber = '919011147755'.replace(/\D/g, '');
+        const rawWaNumber = '9011147755'.replace(/\D/g, '');
+        const waNumber = (rawWaNumber && rawWaNumber.length === 10) ? '91' + rawWaNumber : rawWaNumber;
 
         
         function openNav() {
             document.getElementById("sideMenu").style.left = "0";
             document.getElementById("menuOverlay").style.display = "block";
-            document.body.style.overflow = "hidden"; 
+            document.body.style.overflow = "hidden";
         }
         function closeNav() {
             document.getElementById("sideMenu").style.left = "-260px";
@@ -389,7 +393,6 @@ Website: https://gavathishetmal.com/</div>
             let modal = document.getElementById('offerModal');
             let popupKey = 'popupClosed_Gavathi Shetmal';
             
-            
             if(modal && !sessionStorage.getItem(popupKey)) {
                 setTimeout(() => { 
                     modal.style.display = 'flex'; 
@@ -403,17 +406,8 @@ Website: https://gavathishetmal.com/</div>
         }
 
         
-        function enquireProduct(btnElement) {
-            let productName = btnElement.getAttribute('data-pname');
-            
-            if(!waNumber || waNumber === "91") return alert("WhatsApp नंबर उपलब्ध नाही.");
-            
-            let message = `नमस्कार, \nमला *'${productName}'* याबद्दल अधिक माहिती हवी आहे.`;
-            window.open(`https:
-        }
-
         function sendGeneralEnquiry() {
-            if(!waNumber || waNumber === "91") return alert("WhatsApp नंबर उपलब्ध नाही.");
+            if(!waNumber) return alert("WhatsApp नंबर उपलब्ध नाही.");
             let name = document.getElementById("eqName").value.trim();
             let city = document.getElementById("eqCity").value.trim();
             let msg = document.getElementById("eqMsg").value.trim();
@@ -429,14 +423,13 @@ Website: https://gavathishetmal.com/</div>
         const installBanner = document.getElementById('installBanner');
         const installBtn = document.getElementById('installBtn');
 
-        
         if (window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true) {
             installBanner.style.display = 'none';
         } else {
             window.addEventListener('beforeinstallprompt', (e) => {
                 e.preventDefault();
                 deferredPrompt = e;
-                installBanner.style.display = 'flex'; 
+                installBanner.style.display = 'flex';
             });
         }
 
@@ -451,7 +444,6 @@ Website: https://gavathishetmal.com/</div>
             }
         });
 
-        
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('service-worker.js').catch(err => console.log(err));
         }
