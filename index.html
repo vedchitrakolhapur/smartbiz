@@ -104,7 +104,9 @@
         summary:after { content: '\f107'; font-family: "Font Awesome 6 Free"; font-weight: 900; transition: transform 0.3s; color: #888;}
         details[open] summary:after { transform: rotate(180deg); color: var(--primary); }
         details[open] summary { border-bottom: 1px solid #eee; color: var(--primary); }
-        .faq-content { padding: 15px; color: #555; font-size: 14px; background: white; line-height: 1.6;}
+        
+         
+        .faq-content { padding: 15px; color: #555; font-size: 14px; background: white; line-height: 1.6; white-space: pre-wrap; }
 
          
         .contact-item { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 15px; font-size: 15px; }
@@ -211,7 +213,8 @@
                                                                 <div class="product-info">
                                     <div class="product-name">मेथी भाजी </div>
                                                                         <div class="product-desc"></div>
-                                    <button class="btn-whatsapp" onclick="enquireProduct('मेथी भाजी ', '9011147755')">
+                                    
+                                    <button class="btn-whatsapp" data-pname="मेथी भाजी " onclick="enquireProduct(this)">
                                         <i class="fab fa-whatsapp"></i> चौकशी करा
                                     </button>
                                 </div>
@@ -221,7 +224,8 @@
                                                                 <div class="product-info">
                                     <div class="product-name">चकावत भाजी </div>
                                                                         <div class="product-desc"></div>
-                                    <button class="btn-whatsapp" onclick="enquireProduct('चकावत भाजी ', '9011147755')">
+                                    
+                                    <button class="btn-whatsapp" data-pname="चकावत भाजी " onclick="enquireProduct(this)">
                                         <i class="fab fa-whatsapp"></i> चौकशी करा
                                     </button>
                                 </div>
@@ -234,7 +238,8 @@
                                                                 <div class="product-info">
                                     <div class="product-name">हापूस आंबा </div>
                                                                         <div class="product-desc"></div>
-                                    <button class="btn-whatsapp" onclick="enquireProduct('हापूस आंबा ', '9011147755')">
+                                    
+                                    <button class="btn-whatsapp" data-pname="हापूस आंबा " onclick="enquireProduct(this)">
                                         <i class="fab fa-whatsapp"></i> चौकशी करा
                                     </button>
                                 </div>
@@ -244,7 +249,8 @@
                                                                 <div class="product-info">
                                     <div class="product-name">काजूगर </div>
                                                                         <div class="product-desc"></div>
-                                    <button class="btn-whatsapp" onclick="enquireProduct('काजूगर ', '9011147755')">
+                                    
+                                    <button class="btn-whatsapp" data-pname="काजूगर " onclick="enquireProduct(this)">
                                         <i class="fab fa-whatsapp"></i> चौकशी करा
                                     </button>
                                 </div>
@@ -254,7 +260,8 @@
                                                                 <div class="product-info">
                                     <div class="product-name">फणस </div>
                                                                         <div class="product-desc"></div>
-                                    <button class="btn-whatsapp" onclick="enquireProduct('फणस ', '9011147755')">
+                                    
+                                    <button class="btn-whatsapp" data-pname="फणस " onclick="enquireProduct(this)">
                                         <i class="fab fa-whatsapp"></i> चौकशी करा
                                     </button>
                                 </div>
@@ -270,7 +277,7 @@
                             <div class="contact-item"><i class="fas fa-phone-alt"></i> <div><a href="tel:9011147755" style="font-weight:bold; color:var(--primary);">9011147755</a></div></div>
             
                             <div class="social-links">
-                    <a href="#" target="_blank" class="s-fb" style="background:#1877F2;"><i class="fab fa-facebook-f"></i></a>                    <a href="Instagram%20instagram.com/gavathishetmal" target="_blank" class="s-ig" style="background:#E4405F;"><i class="fab fa-instagram"></i></a>                    <a href="https://www.youtube.com/@GavathiShetmal" target="_blank" class="s-yt" style="background:#FF0000;"><i class="fab fa-youtube"></i></a>                </div>
+                    <a href="#" target="_blank" class="s-fb" style="background:#1877F2;"><i class="fab fa-facebook-f"></i></a>                    <a href="https://instagram.com/gavathishetmal" target="_blank" class="s-ig" style="background:#E4405F;"><i class="fab fa-instagram"></i></a>                    <a href="https://www.youtube.com/@GavathiShetmal" target="_blank" class="s-yt" style="background:#FF0000;"><i class="fab fa-youtube"></i></a>                </div>
             
                     </div>
 
@@ -396,10 +403,11 @@ Website: https://gavathishetmal.com/</div>
         }
 
         
-        function enquireProduct(productName, number) {
-            if(!number || number === "") return alert("WhatsApp नंबर उपलब्ध नाही.");
-            let cleanNumber = number.replace(/\D/g, '');
-            if(cleanNumber.length === 10) cleanNumber = '91' + cleanNumber;
+        function enquireProduct(btnElement) {
+            let productName = btnElement.getAttribute('data-pname');
+            
+            if(!waNumber || waNumber === "91") return alert("WhatsApp नंबर उपलब्ध नाही.");
+            
             let message = `नमस्कार, \nमला *'${productName}'* याबद्दल अधिक माहिती हवी आहे.`;
             window.open(`https:
         }
