@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Gavathi Shetmal</title>
+    <meta name="description" content="शिवारातून थेट ताटात ...">
+    <meta name="keywords" content="गावठी शेतमाल, Gavathi Shetmal, Fresh Vegetables Mumbai, Ajara Ghansal Rice, Organic Products Kolhapur">
+    <meta name="theme-color" content="#28a745">
+    
+    <meta name="google-site-verification" content="YOUR_SEARCH_CONSOLE_CODE_HERE" />
+
+    <link rel="icon" type="image/png" href="https://gavathishetmal.com/assets/img_670175.webp">
+    <link rel="apple-touch-icon" href="https://gavathishetmal.com/assets/img_670175.webp">
+    <meta property="og:title" content="गावठी शेतमाल">
+    <meta property="og:description" content="शिवारातून थेट ताटात ...">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://gavathishetmal.com/assets/img_128735.webp">
+
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700&amp;display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #28a745;
+            --text-dark: #333;
+            --text-light: #666;
+            --card-bg: #ffffff;
+        }
+        
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Mukta', sans-serif;}
+        body { background: #f0f2f5; color: var(--text-dark); line-height: 1.6; padding-bottom: 70px; overflow-x: hidden; }
+        a { text-decoration: none; color: inherit; scroll-behavior: smooth; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 15px; }
+
+         
+        .header { background: white; padding: 12px 0; position: sticky; top: 0; z-index: 500; box-shadow: 0 2px 10px rgba(0,0,0,0.08); border-bottom: 3px solid var(--primary); }
+        .header-content { display: flex; align-items: center; justify-content: space-between; padding: 0 15px; max-width: 1000px; margin: 0 auto; }
+        .header-left { display: flex; align-items: center; gap: 15px; }
+        .menu-btn { font-size: 24px; color: var(--primary); cursor: pointer; }
+        .brand { display: flex; align-items: center; gap: 10px; }
+        .brand img { width: 45px; height: 45px; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary); }
+        .brand-text h1 { font-size: 18px; font-weight: 700; color: var(--primary); line-height: 1.1; }
+        .brand-text p { font-size: 12px; color: var(--text-light); margin-top:2px; }
+        .header-actions a { display: inline-flex; width: 40px; height: 40px; background: #e8f5e9; color: #25D366; border-radius: 50%; align-items: center; justify-content: center; font-size: 22px; }
+
+         
+        .sidenav { height: 100%; width: 260px; position: fixed; z-index: 2000; top: 0; left: -260px; background-color: white; transition: 0.3s; box-shadow: 2px 0 15px rgba(0,0,0,0.2); padding-top: 20px; }
+        .sidenav .closebtn { position: absolute; top: 10px; right: 15px; font-size: 28px; color: #666; cursor: pointer; }
+        .sidenav-logo { text-align: center; padding-bottom: 15px; border-bottom: 1px solid #eee; margin-bottom: 10px; }
+        .sidenav-logo img { width: 70px; height: 70px; border-radius: 50%; border: 2px solid var(--primary); }
+        .sidenav a { padding: 12px 20px; text-decoration: none; font-size: 16px; color: #333; display: block; font-weight: 600; border-bottom: 1px solid #f5f5f5;}
+        .sidenav a i { width: 25px; color: var(--primary); }
+        #menuOverlay { position: fixed; display: none; width: 100%; height: 100%; top: 0; left: 0; background-color: rgba(0,0,0,0.6); z-index: 1500; cursor: pointer; }
+
+         
+        .section-card { background: var(--card-bg); border-radius: 12px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        .section-title { font-size: 18px; font-weight: 700; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; color: #222; border-bottom: 2px solid #f0f2f5; padding-bottom: 8px;}
+        .section-title i { color: var(--primary); }
+
+         
+        .slider-container { width: 100%; margin: 15px auto; overflow: hidden; position: relative; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); background: white; }
+        .slides { display: flex; transition: transform 0.5s ease-in-out; width: 100%; }
+        .slide { min-width: 100%; flex-shrink: 0; }
+        .slide img { width: 100%; height: 200px; object-fit: cover; display: block; }
+        @media(min-width: 768px) { .slide img { height: 350px; } }
+
+         
+        .features-row { display: flex; gap: 15px; overflow-x: auto; padding: 10px 0; margin-bottom: 20px; scrollbar-width: none; }
+        .features-row::-webkit-scrollbar { display: none; }
+        .feature-card { background: white; padding: 10px 15px; border-radius: 50px; display: flex; align-items: center; gap: 8px; white-space: nowrap; font-size: 14px; font-weight: 600; color: var(--primary); box-shadow: 0 2px 5px rgba(0,0,0,0.05); border: 1px solid #eee; }
+
+         
+        .category-title { background: var(--primary); color: white; display: inline-block; padding: 5px 15px; border-radius: 8px 8px 0 0; font-size: 16px; margin-top: 10px; font-weight: bold; }
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; background: white; padding: 15px; border-radius: 0 8px 8px 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin-bottom: 20px;}
+        @media(min-width: 768px) { .products-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); } }
+        .product-card { border: 1px solid #eee; border-radius: 10px; overflow: hidden; background: #fff; display: flex; flex-direction: column; transition: 0.3s; }
+        .product-card:hover { box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .product-img { width: 100%; height: 140px; object-fit: cover; background: #f8f9fa; border-bottom: 1px solid #eee;}
+        .product-info { padding: 10px; flex: 1; display: flex; flex-direction: column; }
+        .product-name { font-size: 14px; font-weight: 700; color: #222; margin-bottom: 5px; }
+        .product-price { font-size: 15px; font-weight: 700; color: var(--primary); margin-bottom: 5px; }
+        .product-desc { font-size: 11px; color: var(--text-light); margin-bottom: 10px; flex: 1; }
+
+         
+        .btn-whatsapp { background: #25D366; color: white; text-align: center; padding: 8px; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer; border: none; width: 100%; display: flex; align-items: center; justify-content: center; gap: 6px; text-decoration: none;}
+        .btn-whatsapp:hover { opacity: 0.9; }
+        .btn-submit { background: var(--primary); color: white; border: none; padding: 12px; width: 100%; border-radius: 6px; font-size: 16px; font-weight: bold; cursor: pointer; display: flex; justify-content: center; align-items: center; gap: 8px;}
+
+         
+        .form-group { margin-bottom: 12px; }
+        .form-group label { display: block; font-size: 13px; margin-bottom: 5px; font-weight: 600; color: #444; }
+        .form-control { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 6px; font-size: 14px; background: #fafafa;}
+        .form-control:focus { outline: none; border-color: var(--primary); background: white;}
+
+         
+        details { background: #f8f9fa; margin-bottom: 10px; border-radius: 8px; border: 1px solid #eee; overflow: hidden; }
+        summary { padding: 15px; font-size: 15px; font-weight: 600; cursor: pointer; outline: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+        summary::-webkit-details-marker { display: none; }
+        summary:after { content: '\f107'; font-family: "Font Awesome 6 Free"; font-weight: 900; transition: transform 0.3s; color: #888;}
+        details[open] summary:after { transform: rotate(180deg); color: var(--primary); }
+        details[open] summary { border-bottom: 1px solid #eee; color: var(--primary); }
+        .faq-content { padding: 15px; color: #555; font-size: 14px; background: white; line-height: 1.6; white-space: pre-wrap; }
+
+         
+        .contact-item { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 15px; font-size: 15px; }
+        .contact-item i { color: var(--primary); font-size: 18px; margin-top: 3px; width: 20px; text-align: center;}
+        .social-links { display: flex; gap: 15px; margin-top: 20px; border-top: 1px solid #eee; padding-top: 15px;}
+        .social-links a { width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px; }
+
+         
+        .popup-modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 3000; align-items: center; justify-content: center; padding: 15px;}
+        .popup-content { background: white; width: 100%; max-width: 350px; border-radius: 12px; text-align: center; position: relative; animation: popIn 0.3s ease-out;}
+        @keyframes popIn { from { transform: scale(0.8); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+        .popup-header { background: #d35400; color: white; padding: 20px 15px; font-size: 20px; font-weight: bold; border-radius: 12px 12px 0 0;}
+        .popup-body { padding: 25px 20px; font-size: 15px; color: #444; }
+        .popup-close { position: absolute; top: -10px; right: -10px; background: white; color: red; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.3); border: 1px solid #eee;}
+
+         
+        .install-banner { position: fixed; bottom: 0; left: 0; width: 100%; background: #fff; padding: 12px 20px; display: none; align-items: center; justify-content: space-between; box-shadow: 0 -4px 15px rgba(0,0,0,0.1); z-index: 1000; border-top: 3px solid var(--primary); }
+        .install-btn { background: var(--primary); color: white; border: none; padding: 8px 15px; border-radius: 20px; font-size: 12px; font-weight: bold; cursor: pointer; }
+
+         
+        #appInstallCard { background: linear-gradient(135deg, var(--primary) 0%, #1e7e34 100%); color: white; padding: 25px; border-radius: 15px; margin-top: 30px; text-align: center; box-shadow: 0 10px 20px rgba(0,0,0,0.15); display: block; }
+        .app-icon { width: 80px; height: 80px; border-radius: 18px; margin-bottom: 15px; background: white; padding: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+        .app-features-list { text-align: left; display: inline-block; margin: 15px 0; font-size: 14px; }
+        .app-features-list div { margin-bottom: 5px; }
+        .app-features-list i { margin-right: 8px; color: #ffeb3b; }
+        .install-btn-large { background: #ffffff; color: var(--primary); border: none; padding: 12px 30px; border-radius: 30px; font-size: 16px; font-weight: 700; cursor: pointer; text-transform: uppercase; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: 0.3s; }
+        .install-btn-large:hover { transform: scale(1.05); background: #f8f9fa; }
+
+         
+        .floating-action { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; box-shadow: 0 4px 10px rgba(37, 211, 102, 0.4); z-index: 900; }
+    </style>
+</head>
+<body>
+
+    <div id="installBanner" class="install-banner">
+        <div style="display:flex; align-items:center; gap:10px;">
+            <img src="https://gavathishetmal.com/assets/img_670175.webp" style="width:30px; height:30px; border-radius:5px;"> 
+            <span style="font-size: 14px; font-weight: 600;">ॲप डाउनलोड करा</span>
+        </div>
+        <button class="install-btn" id="installBtn">Install</button>
+    </div>
+
+        <div id="offerModal" class="popup-modal">
+        <div class="popup-content">
+            <span class="popup-close" onclick="closePopup()">&times;</span>
+            <div class="popup-header"><i class="fas fa-gift"></i> मे धमाका ..</div>
+            <div class="popup-body">
+                <p style="white-space: pre-wrap;">सर्व उत्पादनावर 5% खास सूट ..</p>
+                <button class="btn-whatsapp" style="margin-top:20px; background:var(--primary);" onclick="closePopup()">Ok, Thanks!</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="menuOverlay" onclick="closeNav()"></div>
+    <div id="sideMenu" class="sidenav">
+        <span class="closebtn" onclick="closeNav()">&times;</span>
+        <div class="sidenav-logo">
+            <img src="https://gavathishetmal.com/assets/img_670175.webp" alt="Logo">
+            <h3 style="margin-top:10px; color:var(--primary); font-size:16px;">Gavathi Shetmal</h3>
+        </div>
+        <a href="#home" onclick="closeNav()"><i class="fas fa-home"></i> होम (Home)</a>
+        <a href="#about" onclick="closeNav()"><i class="fas fa-info-circle"></i> आमच्याबद्दल</a>
+        <a href="#products" onclick="closeNav()"><i class="fas fa-box-open"></i> उत्पादने (Products)</a>
+        <a href="#contact" onclick="closeNav()"><i class="fas fa-phone-alt"></i> संपर्क (Contact)</a>
+        <a href="#enquiry" onclick="closeNav()"><i class="fas fa-envelope-open-text"></i> ऑनलाइन चौकशी</a>
+        <a href="#faq" onclick="closeNav()"><i class="fas fa-question-circle"></i> प्रश्नोत्तरे (FAQ)</a>
+    </div>
+
+    <header class="header" id="home">
+        <div class="header-content">
+            <div class="header-left">
+                <div class="menu-btn" onclick="openNav()"><i class="fas fa-bars"></i></div>
+                <div class="brand">
+                                            <img src="https://gavathishetmal.com/assets/img_670175.webp" alt="Logo">
+                                        <div class="brand-text">
+                        <h1>गावठी शेतमाल</h1>
+                        <p>Gavathi Shetmal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="header-actions">
+                                    <a href="https://wa.me/919011147755" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+                <div class="slider-container">
+            <div class="slides" id="slider">
+                                    <div class="slide"><img src="https://gavathishetmal.com/assets/img_128735.webp"></div>
+                            </div>
+        </div>
+        
+                <div class="section-card" id="about">
+            <h2 class="section-title"><i class="fas fa-address-card"></i> आमच्याबद्दल</h2>
+            <p style="white-space: pre-wrap; font-size:14px;">अस्सल गावरान चव, थेट शेतकऱ्याच्या बांधावरून!
+&#39;गावठी शेतमाल&#39; हे केवळ एक नाव नसून, कोल्हापूरच्या मातीतील शुद्धता आणि आरोग्याची ती एक खात्री आहे. आजरा, चंदगड आणि गडहिंग्लज या निसर्गरम्य परिसरातील शेतकऱ्यांच्या कष्टाने पिकलेला 100% नैसर्गिक आणि ताजा शेतमाल आम्ही थेट मुंबईत तुमच्या दारापर्यंत पोहोचवतो.</p>
+                            <p style="margin-top: 15px; font-weight:bold; color:var(--primary);">संचालक: श्री. नितीन शिवाजी मळेकर</p>
+                    </div>
+        
+                <div class="features-row" id="features">
+                            <div class="feature-card"><i class="fas fa-check-circle"></i> 100% नैसर्गिक व अस्सल शेतमाल</div>
+                            <div class="feature-card"><i class="fas fa-check-circle"></i> थेट शेतातून ग्राहकांपर्यंत</div>
+                            <div class="feature-card"><i class="fas fa-check-circle"></i> रसायनमुक्त व नैसर्गिकरीत्या पिकवलेली फळे व भाज्या</div>
+                    </div>
+        
+        <div id="products">
+                                                        <div class="category-title">भाजीपाला </div>
+                    <div class="products-grid">
+                                                    <div class="product-card">
+                                                                    <img src="https://gavathishetmal.com/assets/img_895369.webp" class="product-img" loading="lazy">
+                                                                <div class="product-info">
+                                    <div class="product-name">मेथी भाजी </div>
+                                                                        <div class="product-desc"></div>
+                                    
+                                                                        <a href="https://wa.me/919011147755?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%BE%E0%A4%B0%2C%20%0A%E0%A4%AE%E0%A4%B2%E0%A4%BE%20*%27%E0%A4%AE%E0%A5%87%E0%A4%A5%E0%A5%80%20%E0%A4%AD%E0%A4%BE%E0%A4%9C%E0%A5%80%20%27*%20%E0%A4%AF%E0%A4%BE%E0%A4%AC%E0%A4%A6%E0%A5%8D%E0%A4%A6%E0%A4%B2%20%E0%A4%85%E0%A4%A7%E0%A4%BF%E0%A4%95%20%E0%A4%AE%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A5%80%20%E0%A4%B9%E0%A4%B5%E0%A5%80%20%E0%A4%86%E0%A4%B9%E0%A5%87." target="_blank" class="btn-whatsapp">
+                                        <i class="fab fa-whatsapp"></i> चौकशी करा
+                                    </a>
+                                </div>
+                            </div>
+                                                    <div class="product-card">
+                                                                    <img src="https://gavathishetmal.com/assets/img_368297.webp" class="product-img" loading="lazy">
+                                                                <div class="product-info">
+                                    <div class="product-name">चकावत भाजी </div>
+                                                                        <div class="product-desc"></div>
+                                    
+                                                                        <a href="https://wa.me/919011147755?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%BE%E0%A4%B0%2C%20%0A%E0%A4%AE%E0%A4%B2%E0%A4%BE%20*%27%E0%A4%9A%E0%A4%95%E0%A4%BE%E0%A4%B5%E0%A4%A4%20%E0%A4%AD%E0%A4%BE%E0%A4%9C%E0%A5%80%20%27*%20%E0%A4%AF%E0%A4%BE%E0%A4%AC%E0%A4%A6%E0%A5%8D%E0%A4%A6%E0%A4%B2%20%E0%A4%85%E0%A4%A7%E0%A4%BF%E0%A4%95%20%E0%A4%AE%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A5%80%20%E0%A4%B9%E0%A4%B5%E0%A5%80%20%E0%A4%86%E0%A4%B9%E0%A5%87." target="_blank" class="btn-whatsapp">
+                                        <i class="fab fa-whatsapp"></i> चौकशी करा
+                                    </a>
+                                </div>
+                            </div>
+                                            </div>
+                                                                <div class="category-title">फळे</div>
+                    <div class="products-grid">
+                                                    <div class="product-card">
+                                                                    <img src="https://gavathishetmal.com/assets/img_114202.webp" class="product-img" loading="lazy">
+                                                                <div class="product-info">
+                                    <div class="product-name">हापूस आंबा </div>
+                                                                        <div class="product-desc"></div>
+                                    
+                                                                        <a href="https://wa.me/919011147755?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%BE%E0%A4%B0%2C%20%0A%E0%A4%AE%E0%A4%B2%E0%A4%BE%20*%27%E0%A4%B9%E0%A4%BE%E0%A4%AA%E0%A5%82%E0%A4%B8%20%E0%A4%86%E0%A4%82%E0%A4%AC%E0%A4%BE%20%27*%20%E0%A4%AF%E0%A4%BE%E0%A4%AC%E0%A4%A6%E0%A5%8D%E0%A4%A6%E0%A4%B2%20%E0%A4%85%E0%A4%A7%E0%A4%BF%E0%A4%95%20%E0%A4%AE%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A5%80%20%E0%A4%B9%E0%A4%B5%E0%A5%80%20%E0%A4%86%E0%A4%B9%E0%A5%87." target="_blank" class="btn-whatsapp">
+                                        <i class="fab fa-whatsapp"></i> चौकशी करा
+                                    </a>
+                                </div>
+                            </div>
+                                                    <div class="product-card">
+                                                                    <img src="https://gavathishetmal.com/assets/img_458979.webp" class="product-img" loading="lazy">
+                                                                <div class="product-info">
+                                    <div class="product-name">काजूगर </div>
+                                                                        <div class="product-desc">उत्तम प्रतीचे काजूगर </div>
+                                    
+                                                                        <a href="https://wa.me/919011147755?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%BE%E0%A4%B0%2C%20%0A%E0%A4%AE%E0%A4%B2%E0%A4%BE%20*%27%E0%A4%95%E0%A4%BE%E0%A4%9C%E0%A5%82%E0%A4%97%E0%A4%B0%20%27*%20%E0%A4%AF%E0%A4%BE%E0%A4%AC%E0%A4%A6%E0%A5%8D%E0%A4%A6%E0%A4%B2%20%E0%A4%85%E0%A4%A7%E0%A4%BF%E0%A4%95%20%E0%A4%AE%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A5%80%20%E0%A4%B9%E0%A4%B5%E0%A5%80%20%E0%A4%86%E0%A4%B9%E0%A5%87." target="_blank" class="btn-whatsapp">
+                                        <i class="fab fa-whatsapp"></i> चौकशी करा
+                                    </a>
+                                </div>
+                            </div>
+                                                    <div class="product-card">
+                                                                    <img src="https://gavathishetmal.com/assets/img_939729.webp" class="product-img" loading="lazy">
+                                                                <div class="product-info">
+                                    <div class="product-name">फणस </div>
+                                                                        <div class="product-desc"></div>
+                                    
+                                                                        <a href="https://wa.me/919011147755?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%BE%E0%A4%B0%2C%20%0A%E0%A4%AE%E0%A4%B2%E0%A4%BE%20*%27%E0%A4%AB%E0%A4%A3%E0%A4%B8%20%27*%20%E0%A4%AF%E0%A4%BE%E0%A4%AC%E0%A4%A6%E0%A5%8D%E0%A4%A6%E0%A4%B2%20%E0%A4%85%E0%A4%A7%E0%A4%BF%E0%A4%95%20%E0%A4%AE%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A5%80%20%E0%A4%B9%E0%A4%B5%E0%A5%80%20%E0%A4%86%E0%A4%B9%E0%A5%87." target="_blank" class="btn-whatsapp">
+                                        <i class="fab fa-whatsapp"></i> चौकशी करा
+                                    </a>
+                                </div>
+                            </div>
+                                            </div>
+                                            </div>
+
+        <div class="section-card" id="contact">
+            <h2 class="section-title"><i class="fas fa-map-marker-alt"></i> संपर्क माहिती</h2>
+            
+                            <div class="contact-item"><i class="fas fa-home"></i> <div>H No - 22/2, Harpavade, Ajara Tal: Ajara, Dist: Kolhapur Maharashtra</div></div>
+                        
+                            <div class="contact-item"><i class="fas fa-phone-alt"></i> <div><a href="tel:9011147755" style="font-weight:bold; color:var(--primary);">9011147755</a></div></div>
+            
+                            <div class="social-links">
+                    <a href="#" target="_blank" class="s-fb"><i class="fab fa-facebook-f"></i></a>                    <a href="https://instagram.com/gavathishetmal" target="_blank" class="s-ig"><i class="fab fa-instagram"></i></a>                    <a href="https://www.youtube.com/@GavathiShetmal" target="_blank" class="s-yt"><i class="fab fa-youtube"></i></a>                </div>
+            
+                    </div>
+
+        <div class="section-card" id="enquiry">
+            <h2 class="section-title"><i class="fas fa-envelope-open-text"></i> ऑनलाइन चौकशी करा</h2>
+            <div class="form-group">
+                <label>तुमचे नाव:</label>
+                <input type="text" id="eqName" class="form-control" placeholder="उदा. राहुल पाटील">
+            </div>
+            <div class="form-group">
+                <label>गाव / शहर:</label>
+                <input type="text" id="eqCity" class="form-control" placeholder="उदा. कोल्हापूर">
+            </div>
+            <div class="form-group">
+                <label>काय माहिती हवी आहे?:</label>
+                <textarea id="eqMsg" class="form-control" rows="3" placeholder="तुमचा प्रश्न येथे लिहा..."></textarea>
+            </div>
+            <button class="btn-submit" onclick="sendGeneralEnquiry()"><i class="fab fa-whatsapp"></i> WhatsApp वर पाठवा</button>
+        </div>
+
+                <div class="section-card" id="faq">
+            <h2 class="section-title"><i class="fas fa-question-circle"></i> वारंवार विचारले जाणारे प्रश्न</h2>
+                            <details>
+                    <summary>About Us</summary>
+                    <div class="faq-content">Gavathi Shetmal is an initiative by Rasai Agro, Harpavade, led by Mr. Nitin Shivaji Malekar. We are dedicated to bringing authentic, farm-fresh produce directly from the fertile lands of Ajara, Chandgad, and Gadhinglaj (Kolhapur) to your doorstep in Mumbai. Our mission is to bridge the gap between hardworking farmers and health-conscious urban consumers by providing 100% natural and high-quality vegetables, fruits, and grains.</div>
+                </details>
+                            <details>
+                    <summary>Terms &amp; Conditions</summary>
+                    <div class="faq-content">By accessing this website, you agree to comply with our service policies.
+All products are subject to availability.
+Prices of fresh produce may fluctuate based on market conditions.
+We reserve the right to refuse service to anyone for any reason at any time.</div>
+                </details>
+                            <details>
+                    <summary>Privacy Policy</summary>
+                    <div class="faq-content">We collect only essential information (Name, Address, Phone) required for order processing and delivery.
+Your data is strictly confidential and will never be shared with third parties for marketing purposes.
+We use secure methods to store and process your information.</div>
+                </details>
+                            <details>
+                    <summary>Order &amp; Cancellation Policy</summary>
+                    <div class="faq-content">Orders: Orders can be placed via our website or WhatsApp.
+Cancellation: Since we deal with perishable goods (fresh vegetables/fruits), orders once dispatched cannot be cancelled.
+Modifications: Any changes to the order must be made within 2 hours of placement.</div>
+                </details>
+                            <details>
+                    <summary>Payment Methods</summary>
+                    <div class="faq-content">We accept the following payment methods:
+UPI: Google Pay, PhonePe, Paytm.
+Cash on Delivery (COD): Available for select locations in Mumbai.
+Bank Transfer: Details available on request.</div>
+                </details>
+                            <details>
+                    <summary>Shipping &amp; Delivery</summary>
+                    <div class="faq-content">We deliver across Mumbai and suburban areas.
+Delivery is scheduled on specific days to ensure maximum freshness.
+Shipping charges may apply based on the order value and delivery location.</div>
+                </details>
+                            <details>
+                    <summary>Contact Us</summary>
+                    <div class="faq-content">Admin: Mr. Nitin Shivaji Malekar
+Business Name: Rasai Agro, Harpavade
+Address: H No - 22/2, Harpavade, Ajara, Tal: Ajara, Dist: Kolhapur, Maharashtra.
+Call/WhatsApp: &#43;91 9011147755
+Website: https://gavathishetmal.com/</div>
+                </details>
+                    </div>
+        
+        <div id="appInstallCard">
+            <img src="https://gavathishetmal.com/assets/img_670175.webp" class="app-icon" alt="App Icon">
+            <h2>Gavathi Shetmal ॲप इन्स्टॉल करा</h2>
+            <p>आमच्यासोबत जोडलेले राहण्यासाठी आणि ताज्या अपडेट्ससाठी आमचे अधिकृत ॲप डाऊनलोड करा.</p>
+            
+            <div class="app-features-list">
+                <div><i class="fas fa-bolt"></i> जलद आणि सोपी ऑर्डर प्रक्रिया</div>
+                <div><i class="fas fa-bell"></i> नवीन उत्पादनांच्या सूचना (Notifications)</div>
+                <div><i class="fas fa-mobile-alt"></i> एका क्लिकवर सर्व माहिती</div>
+            </div>
+            
+            <div style="margin-top:10px;">
+                <button id="installBtnLarge" class="install-btn-large">
+                    <i class="fas fa-download"></i> Install Our App
+                </button>
+            </div>
+        </div>
+
+    </div> <footer style="text-align: center; padding: 20px; color: #777; font-size: 13px; margin-top: 20px;">
+        &copy; 2026 Gavathi Shetmal. All Rights Reserved.
+    </footer>
+
+        <a href="https://wa.me/919011147755?text=नमस्कार,%20मला%20माहिती%20हवी%20आहे." target="_blank" class="floating-action">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <script>
+        const rawWaNumber = '9011147755'.replace(/\D/g, '');
+        const waNumber = (rawWaNumber && rawWaNumber.length === 10) ? '91' + rawWaNumber : rawWaNumber;
+
+        
+        function openNav() {
+            document.getElementById("sideMenu").style.left = "0";
+            document.getElementById("menuOverlay").style.display = "block";
+            document.body.style.overflow = "hidden";
+        }
+        function closeNav() {
+            document.getElementById("sideMenu").style.left = "-260px";
+            document.getElementById("menuOverlay").style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+
+        
+        try {
+            let slideIndex = 0;
+            const slider = document.getElementById('slider');
+            const slides = document.querySelectorAll('.slide');
+            
+            if(slider && slides.length > 1) {
+                setInterval(() => {
+                    slideIndex++;
+                    if (slideIndex >= slides.length) slideIndex = 0;
+                    slider.style.transform = `translateX(-${slideIndex * 100}%)`;
+                }, 3500);
+            }
+        } catch(e) { console.error("Slider Error: ", e); }
+
+        
+        function closePopup() {
+            document.getElementById('offerModal').style.display = 'none';
+            
+            sessionStorage.setItem('site_popup_closed', 'true'); 
+        }
+
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            try {
+                let modal = document.getElementById('offerModal');
+                
+                if(modal && !sessionStorage.getItem('site_popup_closed')) {
+                    setTimeout(() => { 
+                        modal.style.display = 'flex'; 
+                    }, 2000); 
+                }
+
+                
+                if (window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true) {
+                    let card = document.getElementById('appInstallCard');
+                    let banner = document.getElementById('installBanner');
+                    if(card) card.style.display = 'none';
+                    if(banner) banner.style.display = 'none';
+                }
+            } catch(e) { console.error("Popup Error: ", e); }
+        });
+
+        
+        function sendGeneralEnquiry() {
+            if(!waNumber) return alert("WhatsApp नंबर उपलब्ध नाही.");
+            let name = document.getElementById("eqName").value.trim();
+            let city = document.getElementById("eqCity").value.trim();
+            let msg = document.getElementById("eqMsg").value.trim();
+            
+            if(name === "" || msg === "") return alert("कृपया तुमचे नाव आणि मेसेज लिहा.");
+
+            let finalMsg = `*नवीन चौकशी*\n\n*नाव:* ${name}\n*गाव/शहर:* ${city}\n*मेसेज:* ${msg}`;
+            window.open(`https:
+        }
+
+        
+        let deferredPrompt;
+        const installBanner = document.getElementById('installBanner');
+        const installBtn = document.getElementById('installBtn');
+        const appInstallCard = document.getElementById('appInstallCard');
+        const installBtnLarge = document.getElementById('installBtnLarge');
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            if (!(window.matchMedia('(display-mode: standalone)').matches)) {
+                if(installBanner) installBanner.style.display = 'flex';
+                if(appInstallCard) appInstallCard.style.display = 'block';
+            }
+        });
+
+        async function handleInstallClick() {
+            if(installBanner) installBanner.style.display = 'none';
+            if(appInstallCard) appInstallCard.style.display = 'none';
+
+            if(deferredPrompt) {
+                deferredPrompt.prompt();
+                const { outcome } = await deferredPrompt.userChoice;
+                deferredPrompt = null;
+            } else {
+                alert("तुमच्या ब्राउझरच्या मेन्यूमधून (3 dots) 'Install App' किंवा 'Add to Home screen' निवडा.");
+            }
+        }
+
+        if(installBtn) installBtn.addEventListener('click', handleInstallClick);
+        if(installBtnLarge) installBtnLarge.addEventListener('click', handleInstallClick);
+
+        window.addEventListener('appinstalled', () => {
+            if(installBanner) installBanner.style.display = 'none';
+            if(appInstallCard) appInstallCard.style.display = 'none';
+            deferredPrompt = null;
+        });
+
+        
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js').catch(err => console.log(err));
+        }
+    </script>
+</body>
+</html>
