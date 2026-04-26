@@ -124,7 +124,7 @@
         .install-btn { background: var(--primary); color: white; border: none; padding: 8px 15px; border-radius: 20px; font-size: 12px; font-weight: bold; cursor: pointer; }
 
          
-        #appInstallCard { background: linear-gradient(135deg, var(--primary) 0%, #1e7e34 100%); color: white; padding: 25px; border-radius: 15px; margin-top: 30px; text-align: center; box-shadow: 0 10px 20px rgba(0,0,0,0.15); display: none; }
+        #appInstallCard { background: linear-gradient(135deg, var(--primary) 0%, #1e7e34 100%); color: white; padding: 25px; border-radius: 15px; margin-top: 30px; text-align: center; box-shadow: 0 10px 20px rgba(0,0,0,0.15); display: block; }
         .app-icon { width: 80px; height: 80px; border-radius: 18px; margin-bottom: 15px; background: white; padding: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
         .app-features-list { text-align: left; display: inline-block; margin: 15px 0; font-size: 14px; }
         .app-features-list div { margin-bottom: 5px; }
@@ -195,6 +195,7 @@
                 <div class="slider-container">
             <div class="slides" id="slider">
                                     <div class="slide"><img src="https://gavathishetmal.com/assets/img_128735.webp"></div>
+                                    <div class="slide"><img src="https://gavathishetmal.com/assets/img_184519.webp"></div>
                             </div>
         </div>
         
@@ -415,7 +416,7 @@ Website: https://gavathishetmal.com/</div>
             if(modal && !sessionStorage.getItem(popupKey)) {
                 setTimeout(() => { 
                     modal.style.display = 'flex'; 
-                }, 60000); 
+                }, 3000); 
             }
 
             
@@ -458,6 +459,7 @@ Website: https://gavathishetmal.com/</div>
             
             if (!(window.matchMedia('(display-mode: standalone)').matches)) {
                 if(installBanner) installBanner.style.display = 'flex';
+                
                 if(appInstallCard) appInstallCard.style.display = 'block';
             }
         });
