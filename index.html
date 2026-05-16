@@ -73,6 +73,7 @@
         .search-input { width: 100%; padding: 12px 15px 12px 40px; border: 1px solid #ddd; border-radius: 8px; font-size: 15px; box-sizing: border-box; box-shadow: 0 2px 5px rgba(0,0,0,0.02); }
         .search-input:focus { outline: none; border-color: var(--primary); box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
         .search-icon { position: absolute; left: 15px; top: 14px; color: #888; font-size: 16px; }
+        .no-results { grid-column: 1 / -1; text-align: center; padding: 20px; color: #888; font-weight: bold; display: none; }
 
          
         .slider-container { width: 100%; margin: 15px auto; overflow: hidden; position: relative; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); background: white; }
@@ -97,7 +98,6 @@
         .product-name { font-size: 14px; font-weight: 700; color: #222; margin-bottom: 5px; }
         .product-price { font-size: 15px; font-weight: 700; color: var(--primary); margin-bottom: 5px; }
         .product-desc { font-size: 11px; color: var(--text-light); margin-bottom: 10px; flex: 1; }
-        .no-results { grid-column: 1 / -1; text-align: center; padding: 20px; color: #888; font-weight: bold; display: none; }
 
          
         .btn-add-to-cart { background: var(--primary); color: white; text-align: center; padding: 8px; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer; border: none; width: 100%; display: flex; align-items: center; justify-content: center; gap: 6px; transition: 0.2s;}
@@ -253,26 +253,26 @@
                                                         <div class="category-section" id="cat-0">
                         <div class="category-title">भाजीपाला </div>
                         <div class="products-grid" id="grid-0">
-                                                            <div class="product-card" data-name="मेथी भाजी ">
+                                                                                            <div class="product-card" data-name="मेथी भाजी ">
                                                                             <img src="https://gavathishetmal.com/assets/img_895369.webp" class="product-img" loading="lazy">
                                                                         <div class="product-info">
                                         <div class="product-name">मेथी भाजी </div>
                                                                                     <div class="product-price">50 रुपये </div>
                                                                                 <div class="product-desc"></div>
                                         
-                                                                                <button class="btn-add-to-cart" onclick="addToCart('मेथी भाजी ', '50 रुपये ')">
+                                        <button class="btn-add-to-cart" onclick="addToCart('मेथी भाजी ', '50 रुपये ')">
                                             <i class="fas fa-shopping-cart"></i> कार्टमध्ये जोडा
                                         </button>
                                     </div>
                                 </div>
-                                                            <div class="product-card" data-name="चकावत भाजी ">
+                                                                                            <div class="product-card" data-name="चकावत भाजी ">
                                                                             <img src="https://gavathishetmal.com/assets/img_368297.webp" class="product-img" loading="lazy">
                                                                         <div class="product-info">
                                         <div class="product-name">चकावत भाजी </div>
                                                                                     <div class="product-price">20 रुपये</div>
                                                                                 <div class="product-desc"></div>
                                         
-                                                                                <button class="btn-add-to-cart" onclick="addToCart('चकावत भाजी ', '20 रुपये')">
+                                        <button class="btn-add-to-cart" onclick="addToCart('चकावत भाजी ', '20 रुपये')">
                                             <i class="fas fa-shopping-cart"></i> कार्टमध्ये जोडा
                                         </button>
                                     </div>
@@ -283,29 +283,29 @@
                                                                 <div class="category-section" id="cat-1">
                         <div class="category-title">फळे</div>
                         <div class="products-grid" id="grid-1">
-                                                            <div class="product-card" data-name="हापूस आंबा ">
+                                                                                            <div class="product-card" data-name="हापूस आंबा ">
                                                                             <img src="https://gavathishetmal.com/assets/img_114202.webp" class="product-img" loading="lazy">
                                                                         <div class="product-info">
                                         <div class="product-name">हापूस आंबा </div>
                                                                                 <div class="product-desc"></div>
                                         
-                                                                                <button class="btn-add-to-cart" onclick="addToCart('हापूस आंबा ', '')">
+                                        <button class="btn-add-to-cart" onclick="addToCart('हापूस आंबा ', '')">
                                             <i class="fas fa-shopping-cart"></i> कार्टमध्ये जोडा
                                         </button>
                                     </div>
                                 </div>
-                                                            <div class="product-card" data-name="काजूगर ">
+                                                                                            <div class="product-card" data-name="काजूगर ">
                                                                             <img src="https://gavathishetmal.com/assets/img_458979.webp" class="product-img" loading="lazy">
                                                                         <div class="product-info">
                                         <div class="product-name">काजूगर </div>
                                                                                 <div class="product-desc">उत्तम प्रतीचे काजूगर </div>
                                         
-                                                                                <button class="btn-add-to-cart" onclick="addToCart('काजूगर ', '')">
+                                        <button class="btn-add-to-cart" onclick="addToCart('काजूगर ', '')">
                                             <i class="fas fa-shopping-cart"></i> कार्टमध्ये जोडा
                                         </button>
                                     </div>
                                 </div>
-                                                            <div class="product-card" data-name="फणस ">
+                                                                                            <div class="product-card" data-name="फणस ">
                                                                             <img src="https://gavathishetmal.com/assets/img_939729.webp" class="product-img" loading="lazy">
                                                                         <div class="product-info">
                                         <div class="product-name">फणस </div>
@@ -314,7 +314,7 @@
 
 या फळाबद्दल अधिक माहितीसाठी आमचा यूट्यूब व्हिडिओ पहा</div>
                                         
-                                                                                <button class="btn-add-to-cart" onclick="addToCart('फणस ', '300 रूपये ')">
+                                        <button class="btn-add-to-cart" onclick="addToCart('फणस ', '300 रूपये ')">
                                             <i class="fas fa-shopping-cart"></i> कार्टमध्ये जोडा
                                         </button>
                                     </div>
@@ -325,62 +325,62 @@
                                                                 <div class="category-section" id="cat-2">
                         <div class="category-title"> तांदूळ (आजरा)</div>
                         <div class="products-grid" id="grid-2">
-                                                            <div class="product-card" data-name="आजरा घनसाळ">
+                                                                                            <div class="product-card" data-name="आजरा घनसाळ">
                                                                             <img src="https://gavathishetmal.com/assets/img_618973.webp" class="product-img" loading="lazy">
                                                                         <div class="product-info">
                                         <div class="product-name">आजरा घनसाळ</div>
                                                                                     <div class="product-price">180 रुपये (किलो)</div>
                                                                                 <div class="product-desc">“आजरा घनसाळ हा कोल्हापूर परिसरातील प्रसिद्ध सुगंधी तांदूळ असून त्याची चव, सुगंध आणि मऊपणा यामुळे प्रत्येक जेवण खास बनते.”</div>
                                         
-                                                                                <button class="btn-add-to-cart" onclick="addToCart('आजरा घनसाळ', '180 रुपये \(किलो\)')">
+                                        <button class="btn-add-to-cart" onclick="addToCart('आजरा घनसाळ', '180 रुपये \(किलो\)')">
                                             <i class="fas fa-shopping-cart"></i> कार्टमध्ये जोडा
                                         </button>
                                     </div>
                                 </div>
-                                                            <div class="product-card" data-name="काळ जिरगा ">
+                                                                                            <div class="product-card" data-name="काळ जिरगा ">
                                                                             <img src="https://gavathishetmal.com/assets/img_756119.webp" class="product-img" loading="lazy">
                                                                         <div class="product-info">
                                         <div class="product-name">काळ जिरगा </div>
                                                                                     <div class="product-price">180 रुपये (किलो)</div>
                                                                                 <div class="product-desc">“काळा जिरगा तांदूळ हा पारंपरिक सुगंधी आणि बारीक दाण्याचा प्रीमियम तांदूळ आहे. उत्कृष्ट चव, नैसर्गिक सुगंध आणि मऊपणामुळे तो दैनंदिन जेवण तसेच खास पदार्थांसाठी उत्तम पर्याय आहे.”</div>
                                         
-                                                                                <button class="btn-add-to-cart" onclick="addToCart('काळ जिरगा ', '180 रुपये \(किलो\)')">
+                                        <button class="btn-add-to-cart" onclick="addToCart('काळ जिरगा ', '180 रुपये \(किलो\)')">
                                             <i class="fas fa-shopping-cart"></i> कार्टमध्ये जोडा
                                         </button>
                                     </div>
                                 </div>
-                                                            <div class="product-card" data-name="दफ्तरी ">
+                                                                                            <div class="product-card" data-name="दफ्तरी ">
                                                                             <img src="https://gavathishetmal.com/assets/img_103615.webp" class="product-img" loading="lazy">
                                                                         <div class="product-info">
                                         <div class="product-name">दफ्तरी </div>
                                                                                     <div class="product-price">90 रुपये </div>
                                                                                 <div class="product-desc">स्वच्छ दाणे, मऊपणा आणि रोजच्या जेवणासाठी उत्तम तांदूळ.</div>
                                         
-                                                                                <button class="btn-add-to-cart" onclick="addToCart('दफ्तरी ', '90 रुपये ')">
+                                        <button class="btn-add-to-cart" onclick="addToCart('दफ्तरी ', '90 रुपये ')">
                                             <i class="fas fa-shopping-cart"></i> कार्टमध्ये जोडा
                                         </button>
                                     </div>
                                 </div>
-                                                            <div class="product-card" data-name="सारथी ">
+                                                                                            <div class="product-card" data-name="सारथी ">
                                                                             <img src="https://gavathishetmal.com/assets/img_686897.webp" class="product-img" loading="lazy">
                                                                         <div class="product-info">
                                         <div class="product-name">सारथी </div>
                                                                                     <div class="product-price">80/90 रुपये</div>
                                                                                 <div class="product-desc">“लांब दाणे, मऊपणा आणि उत्कृष्ट गुणवत्तेमुळे रोजच्या वापरासाठी उत्तम तांदूळ.</div>
                                         
-                                                                                <button class="btn-add-to-cart" onclick="addToCart('सारथी ', '80\/90 रुपये')">
+                                        <button class="btn-add-to-cart" onclick="addToCart('सारथी ', '80\/90 रुपये')">
                                             <i class="fas fa-shopping-cart"></i> कार्टमध्ये जोडा
                                         </button>
                                     </div>
                                 </div>
-                                                            <div class="product-card" data-name="आंबे मोहर ">
+                                                                                            <div class="product-card" data-name="आंबे मोहर ">
                                                                             <img src="https://gavathishetmal.com/assets/img_167226.webp" class="product-img" loading="lazy">
                                                                         <div class="product-info">
                                         <div class="product-name">आंबे मोहर </div>
                                                                                     <div class="product-price">180</div>
                                                                                 <div class="product-desc">नैसर्गिक सुगंध, मऊपणा आणि खास चवीसाठी प्रसिद्ध पारंपरिक तांदूळ.</div>
                                         
-                                                                                <button class="btn-add-to-cart" onclick="addToCart('आंबे मोहर ', '180')">
+                                        <button class="btn-add-to-cart" onclick="addToCart('आंबे मोहर ', '180')">
                                             <i class="fas fa-shopping-cart"></i> कार्टमध्ये जोडा
                                         </button>
                                     </div>
@@ -550,21 +550,23 @@ Website: www.gavathishetmal.com</div>
     </div>
 
     <script id="safeSiteData" type="application/json">
-        {"basicInfo":{"businessName":"गावठी शेतमाल","slogan":"शिवारातून थेट ताटात ...","whatsappNo":"9011147755","themeColor":"#28a745","logo":"https://gavathishetmal.com/assets/img_670175.webp","englishName":"Gavathi Shetmal"},"offerPopup":{"active":"yes","title":"SUMMER बंपर धमाका ..","message":"सर्व उत्पादनावर 5% खास सूट ..\nत्वरा करा !!!"},"slider":["https://gavathishetmal.com/assets/img_128735.webp","https://gavathishetmal.com/assets/img_987838.webp"],"faqs":[{"q":"About Us","a":"Gavathi Shetmal is an initiative by Rasai Agro, Harpavade, led by Mr. Nitin Shivaji Malekar. We are dedicated to bringing authentic, farm-fresh produce directly from the fertile lands of Ajara, Bhudargad, Chandgad, and Gadhinglaj (Kolhapur) to your doorstep in Mumbai. Our mission is to bridge the gap between hardworking farmers and health-conscious urban consumers by providing 100% natural and high-quality vegetables, fruits, and grains."},{"q":"Terms & Conditions","a":"By accessing this website, you agree to comply with our service policies.\nAll products are subject to availability.\nPrices of fresh produce may fluctuate based on market conditions.\nWe reserve the right to refuse service to anyone for any reason at any time."},{"q":"Privacy Policy","a":"We collect only essential information (Name, Address, Phone) required for order processing and delivery.\nYour data is strictly confidential and will never be shared with third parties for marketing purposes.\nWe use secure methods to store and process your information."},{"q":"Order & Cancellation Policy","a":"Orders: Orders can be placed via our website or WhatsApp.\nCancellation: Since we deal with perishable goods (fresh vegetables/fruits), orders once dispatched cannot be cancelled.\nModifications: Any changes to the order must be made within 2 hours of placement."},{"q":"Payment Methods","a":"We accept the following payment methods:\nUPI: Google Pay, PhonePe, Paytm.\nCash on Delivery (COD): Available for select locations in Mumbai.\nBank Transfer: Details available on request."},{"q":"Shipping & Delivery","a":"We deliver across Mumbai and suburban areas.\nDelivery is scheduled on specific days to ensure maximum freshness.\nShipping charges may apply based on the order value and delivery location."},{"q":"Contact Us","a":"Admin: Mr. Nitin Shivaji Malekar\nBusiness Name: Rasai Agro, Harpavade\nAddress: H No - 22/2, Harpavade, Ajara, Tal: Ajara, Dist: Kolhapur, Maharashtra.\nPhone Number: +91 9011147755\nWebsite: www.gavathishetmal.com"}],"features":[{"icon":"fas fa-check-circle","text":"100% नैसर्गिक व अस्सल शेतमाल"},{"icon":"fas fa-check-circle","text":"थेट शेतातून ग्राहकांपर्यंत"},{"icon":"fas fa-check-circle","text":"केमिकल फ्री व नैसर्गिकरीत्या पिकवलेली फळे व भाज्या"},{"icon":"fas fa-check-circle","text":""}],"categories":[{"id":1775623994693,"name":"भाजीपाला ","products":[{"name":"मेथी भाजी ","desc":"","price":"50 रुपये ","image":"https://gavathishetmal.com/assets/img_895369.webp"},{"name":"चकावत भाजी ","desc":"","price":"20 रुपये","image":"https://gavathishetmal.com/assets/img_368297.webp"}]},{"id":1775624387105,"name":"फळे","products":[{"name":"हापूस आंबा ","desc":"","price":"","image":"https://gavathishetmal.com/assets/img_114202.webp"},{"name":"काजूगर ","desc":"उत्तम प्रतीचे काजूगर ","price":"","image":"https://gavathishetmal.com/assets/img_458979.webp"},{"name":"फणस ","desc":"https://youtu.be/ZEjmQx70JX8?si=khOXSobCI_2ltAP0\n\nया फळाबद्दल अधिक माहितीसाठी आमचा यूट्यूब व्हिडिओ पहा","price":"300 रूपये ","image":"https://gavathishetmal.com/assets/img_939729.webp"}]},{"id":1778167374083,"name":" तांदूळ (आजरा)","products":[{"name":"आजरा घनसाळ","desc":"“आजरा घनसाळ हा कोल्हापूर परिसरातील प्रसिद्ध सुगंधी तांदूळ असून त्याची चव, सुगंध आणि मऊपणा यामुळे प्रत्येक जेवण खास बनते.”","price":"180 रुपये (किलो)","image":"https://gavathishetmal.com/assets/img_618973.webp"},{"name":"काळ जिरगा ","desc":"“काळा जिरगा तांदूळ हा पारंपरिक सुगंधी आणि बारीक दाण्याचा प्रीमियम तांदूळ आहे. उत्कृष्ट चव, नैसर्गिक सुगंध आणि मऊपणामुळे तो दैनंदिन जेवण तसेच खास पदार्थांसाठी उत्तम पर्याय आहे.”","price":"180 रुपये (किलो)","image":"https://gavathishetmal.com/assets/img_756119.webp"},{"name":"दफ्तरी ","desc":"स्वच्छ दाणे, मऊपणा आणि रोजच्या जेवणासाठी उत्तम तांदूळ.","price":"90 रुपये ","image":"https://gavathishetmal.com/assets/img_103615.webp"},{"name":"सारथी ","desc":"“लांब दाणे, मऊपणा आणि उत्कृष्ट गुणवत्तेमुळे रोजच्या वापरासाठी उत्तम तांदूळ.","price":"80/90 रुपये","image":"https://gavathishetmal.com/assets/img_686897.webp"},{"name":"आंबे मोहर ","desc":"नैसर्गिक सुगंध, मऊपणा आणि खास चवीसाठी प्रसिद्ध पारंपरिक तांदूळ.","price":"180","image":"https://gavathishetmal.com/assets/img_167226.webp"}]},{"id":1778595371893,"name":"","products":[]}],"customPages":[{"title":"Agro Tourism","slug":"tourism","image":"https://gavathishetmal.com/assets/img_763760.webp","youtubeUrl":"https://youtu.be/ZEjmQx70JX8?si=khOXSobCI_2ltAP0","content":"Gavathi Shetmal is an initiative by Rasai Agro, Harpavade, led by Mr. Nitin Shivaji Malekar. We are dedicated to bringing authentic, farm-fresh produce directly from the fertile lands of Ajara, Bhudargad, Chandgad, and Gadhinglaj (Kolhapur) to your doorstep in Mumbai. Our mission is to bridge the gap between hardworking farmers and health-conscious urban consumers by providing 100% natural and high-quality vegetables, fruits, and grains.\n\nGavathi Shetmal is an initiative by Rasai Agro, Harpavade, led by Mr. Nitin Shivaji Malekar. We are dedicated to bringing authentic, farm-fresh produce directly from the fertile lands of Ajara, Bhudargad, Chandgad, and Gadhinglaj (Kolhapur) to your doorstep in Mumbai. Our mission is to bridge the gap between hardworking farmers and health-conscious urban consumers by providing 100% natural and high-quality vegetables, fruits, and grains.","btnText":"अधिक माहिती","btnUrl":"https://youtu.be/ZEjmQx70JX8?si=khOXSobCI_2ltAP0"}],"about":{"description":"अस्सल गावरान चव, थेट शेतकऱ्याच्या बांधावरून!\n'गावठी शेतमाल' हे केवळ एक नाव नसून, कोल्हापूरच्या मातीतील शुद्धता आणि आरोग्याची ती एक खात्री आहे. आजरा, भुदरगड, चंदगड आणि गडहिंग्लज या निसर्गरम्य परिसरातील शेतकऱ्यांच्या कष्टाने पिकलेला 100% नैसर्गिक आणि ताजा शेतमाल आम्ही थेट मुंबईत तुमच्या दारापर्यंत पोहोचवतो. ","ownerName":"श्री. नितीन शिवाजी मळेकर "},"contact":{"address":"H No - 22/2, Harpavade, Ajara Tal: Ajara, Dist: Kolhapur Maharashtra","gmap":"","phone":"9011147755","email":""},"social":{"facebook":"#","instagram":"https://instagram.com/gavathishetmal","youtube":"https://www.youtube.com/@GavathiShetmal"}}    </script>
+        {"basicInfo":{"businessName":"गावठी शेतमाल","slogan":"शिवारातून थेट ताटात ...","whatsappNo":"9011147755","themeColor":"#28a745","logo":"https://gavathishetmal.com/assets/img_670175.webp","englishName":"Gavathi Shetmal"},"offerPopup":{"active":"yes","title":"SUMMER बंपर धमाका ..","message":"सर्व उत्पादनावर 5% खास सूट ..\nत्वरा करा !!!"},"slider":["https://gavathishetmal.com/assets/img_128735.webp","https://gavathishetmal.com/assets/img_987838.webp"],"faqs":[{"q":"About Us","a":"Gavathi Shetmal is an initiative by Rasai Agro, Harpavade, led by Mr. Nitin Shivaji Malekar. We are dedicated to bringing authentic, farm-fresh produce directly from the fertile lands of Ajara, Bhudargad, Chandgad, and Gadhinglaj (Kolhapur) to your doorstep in Mumbai. Our mission is to bridge the gap between hardworking farmers and health-conscious urban consumers by providing 100% natural and high-quality vegetables, fruits, and grains."},{"q":"Terms & Conditions","a":"By accessing this website, you agree to comply with our service policies.\nAll products are subject to availability.\nPrices of fresh produce may fluctuate based on market conditions.\nWe reserve the right to refuse service to anyone for any reason at any time."},{"q":"Privacy Policy","a":"We collect only essential information (Name, Address, Phone) required for order processing and delivery.\nYour data is strictly confidential and will never be shared with third parties for marketing purposes.\nWe use secure methods to store and process your information."},{"q":"Order & Cancellation Policy","a":"Orders: Orders can be placed via our website or WhatsApp.\nCancellation: Since we deal with perishable goods (fresh vegetables/fruits), orders once dispatched cannot be cancelled.\nModifications: Any changes to the order must be made within 2 hours of placement."},{"q":"Payment Methods","a":"We accept the following payment methods:\nUPI: Google Pay, PhonePe, Paytm.\nCash on Delivery (COD): Available for select locations in Mumbai.\nBank Transfer: Details available on request."},{"q":"Shipping & Delivery","a":"We deliver across Mumbai and suburban areas.\nDelivery is scheduled on specific days to ensure maximum freshness.\nShipping charges may apply based on the order value and delivery location."},{"q":"Contact Us","a":"Admin: Mr. Nitin Shivaji Malekar\nBusiness Name: Rasai Agro, Harpavade\nAddress: H No - 22/2, Harpavade, Ajara, Tal: Ajara, Dist: Kolhapur, Maharashtra.\nPhone Number: +91 9011147755\nWebsite: www.gavathishetmal.com"}],"features":[{"icon":"fas fa-check-circle","text":"100% नैसर्गिक व अस्सल शेतमाल"},{"icon":"fas fa-check-circle","text":"थेट शेतातून ग्राहकांपर्यंत"},{"icon":"fas fa-check-circle","text":"केमिकल फ्री व नैसर्गिकरीत्या पिकवलेली फळे व भाज्या"},{"icon":"fas fa-check-circle","text":""}],"categories":[{"id":1775623994693,"name":"भाजीपाला ","products":[{"name":"मेथी भाजी ","desc":"","price":"50 रुपये ","image":"https://gavathishetmal.com/assets/img_895369.webp"},{"name":"चकावत भाजी ","desc":"","price":"20 रुपये","image":"https://gavathishetmal.com/assets/img_368297.webp"}]},{"id":1775624387105,"name":"फळे","products":[{"name":"हापूस आंबा ","desc":"","price":"","image":"https://gavathishetmal.com/assets/img_114202.webp"},{"name":"काजूगर ","desc":"उत्तम प्रतीचे काजूगर ","price":"","image":"https://gavathishetmal.com/assets/img_458979.webp"},{"name":"फणस ","desc":"https://youtu.be/ZEjmQx70JX8?si=khOXSobCI_2ltAP0\n\nया फळाबद्दल अधिक माहितीसाठी आमचा यूट्यूब व्हिडिओ पहा","price":"300 रूपये ","image":"https://gavathishetmal.com/assets/img_939729.webp"}]},{"id":1778167374083,"name":" तांदूळ (आजरा)","products":[{"name":"आजरा घनसाळ","desc":"“आजरा घनसाळ हा कोल्हापूर परिसरातील प्रसिद्ध सुगंधी तांदूळ असून त्याची चव, सुगंध आणि मऊपणा यामुळे प्रत्येक जेवण खास बनते.”","price":"180 रुपये (किलो)","image":"https://gavathishetmal.com/assets/img_618973.webp"},{"name":"काळ जिरगा ","desc":"“काळा जिरगा तांदूळ हा पारंपरिक सुगंधी आणि बारीक दाण्याचा प्रीमियम तांदूळ आहे. उत्कृष्ट चव, नैसर्गिक सुगंध आणि मऊपणामुळे तो दैनंदिन जेवण तसेच खास पदार्थांसाठी उत्तम पर्याय आहे.”","price":"180 रुपये (किलो)","image":"https://gavathishetmal.com/assets/img_756119.webp"},{"name":"दफ्तरी ","desc":"स्वच्छ दाणे, मऊपणा आणि रोजच्या जेवणासाठी उत्तम तांदूळ.","price":"90 रुपये ","image":"https://gavathishetmal.com/assets/img_103615.webp"},{"name":"सारथी ","desc":"“लांब दाणे, मऊपणा आणि उत्कृष्ट गुणवत्तेमुळे रोजच्या वापरासाठी उत्तम तांदूळ.","price":"80/90 रुपये","image":"https://gavathishetmal.com/assets/img_686897.webp"},{"name":"आंबे मोहर ","desc":"नैसर्गिक सुगंध, मऊपणा आणि खास चवीसाठी प्रसिद्ध पारंपरिक तांदूळ.","price":"180","image":"https://gavathishetmal.com/assets/img_167226.webp"}]},{"id":1778595371893,"name":"","products":[]}],"customPages":[{"title":"Agro Tourism","slug":"tourism","image":"https://gavathishetmal.com/assets/img_763760.webp","youtubeUrl":"https://youtu.be/ZEjmQx70JX8?si=khOXSobCI_2ltAP0","content":"Gavathi Shetmal is an initiative by Rasai Agro, Harpavade, led by Mr. Nitin Shivaji Malekar. We are dedicated to bringing authentic, farm-fresh produce directly from the fertile lands of Ajara, Bhudargad, Chandgad, and Gadhinglaj (Kolhapur) to your doorstep in Mumbai. Our mission is to bridge the gap between hardworking farmers and health-conscious urban consumers by providing 100% natural and high-quality vegetables, fruits, and grains.\n\nGavathi Shetmal is an initiative by Rasai Agro, Harpavade, led by Mr. Nitin Shivaji Malekar. We are dedicated to bringing authentic, farm-fresh produce directly from the fertile lands of Ajara, Bhudargad, Chandgad, and Gadhinglaj (Kolhapur) to your doorstep in Mumbai. ","btnText":"अधिक माहिती","btnUrl":"https://youtu.be/ZEjmQx70JX8?si=khOXSobCI_2ltAP0"}],"about":{"description":"अस्सल गावरान चव, थेट शेतकऱ्याच्या बांधावरून!\n'गावठी शेतमाल' हे केवळ एक नाव नसून, कोल्हापूरच्या मातीतील शुद्धता आणि आरोग्याची ती एक खात्री आहे. आजरा, भुदरगड, चंदगड आणि गडहिंग्लज या निसर्गरम्य परिसरातील शेतकऱ्यांच्या कष्टाने पिकलेला 100% नैसर्गिक आणि ताजा शेतमाल आम्ही थेट मुंबईत तुमच्या दारापर्यंत पोहोचवतो. ","ownerName":"श्री. नितीन शिवाजी मळेकर "},"contact":{"address":"H No - 22/2, Harpavade, Ajara Tal: Ajara, Dist: Kolhapur Maharashtra","gmap":"","phone":"9011147755","email":""},"social":{"facebook":"#","instagram":"https://instagram.com/gavathishetmal","youtube":"https://www.youtube.com/@GavathiShetmal"}}    </script>
 
     <script>
         (function() {
-            var safeData = {};
+            
+            var safeData = { basicInfo: {} };
             try {
-                safeData = JSON.parse(document.getElementById('safeSiteData').textContent);
+                var parsed = JSON.parse(document.getElementById('safeSiteData').textContent);
+                if(parsed) safeData = parsed;
+                if(!safeData.basicInfo) safeData.basicInfo = {};
             } catch(e) { console.log("Data Load Error"); }
 
-            var directWa = '9011147755';
-            var rawWaNumber = directWa ? directWa.replace(/\D/g, '') : '';
+            var directWa = safeData.basicInfo.whatsappNo ? safeData.basicInfo.whatsappNo.toString() : "";
+            var rawWaNumber = directWa.replace(/\D/g, '');
             var waNumber = (rawWaNumber && rawWaNumber.length === 10) ? '91' + rawWaNumber : rawWaNumber;
-            var safeKeyName = (safeData.basicInfo && safeData.basicInfo.englishName) ? String(safeData.basicInfo.englishName).replace(/[^a-zA-Z0-9]/g, '') : "biz";
+            var safeKeyName = safeData.basicInfo.englishName ? String(safeData.basicInfo.englishName).replace(/[^a-zA-Z0-9]/g, '') : "biz";
 
-            
             
             var webAppUrl = "https://script.google.com/macros/s/AKfycbypJFrwUp8apm1PfGSBeN7TCbgoVy2r5u6YQppClaqNA6UGyxKGR8-9n_4od1tkOiAj/exec"; 
             var razorpayKeyId = "YOUR_RAZORPAY_KEY_ID_HERE"; 
@@ -572,7 +574,9 @@ Website: www.gavathishetmal.com</div>
 
             
             window.searchProducts = function() {
-                var input = document.getElementById('searchInput').value.toLowerCase();
+                var searchEl = document.getElementById('searchInput');
+                if(!searchEl) return;
+                var input = searchEl.value.toLowerCase();
                 var categorySections = document.querySelectorAll('.category-section');
 
                 categorySections.forEach(function(section) {
@@ -582,7 +586,7 @@ Website: www.gavathishetmal.com</div>
 
                     cards.forEach(function(card) {
                         var name = card.getAttribute('data-name');
-                        if (name.includes(input)) {
+                        if (name && name.includes(input)) {
                             card.style.display = "flex";
                             visibleCount++;
                         } else {
@@ -590,7 +594,6 @@ Website: www.gavathishetmal.com</div>
                         }
                     });
 
-                    
                     if (visibleCount === 0) {
                         if(noResultsDiv) noResultsDiv.style.display = "block";
                     } else {
@@ -608,13 +611,14 @@ Website: www.gavathishetmal.com</div>
             };
 
             window.addToCart = function(name, priceStr) {
-                var price = parseInt(priceStr.replace(/[^0-9]/g, '')) || 0;
-                var existingItem = cart.find(item => item.name === name);
+                var pStr = priceStr ? priceStr.toString() : "0";
+                var price = parseInt(pStr.replace(/[^0-9]/g, '')) || 0;
+                var existingItem = cart.find(function(item) { return item.name === name; });
                 
                 if(existingItem) {
                     existingItem.qty++;
                 } else {
-                    cart.push({ name: name, price: price, qty: 1, rawPrice: priceStr });
+                    cart.push({ name: name, price: price, qty: 1, rawPrice: pStr });
                 }
                 updateCartUI();
                 window.toggleCart(true);
@@ -638,19 +642,23 @@ Website: www.gavathishetmal.com</div>
                 var btnCartAction = document.getElementById("btnCartAction");
                 var checkoutFormSection = document.getElementById("checkoutFormSection");
                 
-                var totalItems = cart.reduce((sum, item) => sum + item.qty, 0);
+                var totalItems = 0;
+                var totalAmount = 0;
+                cart.forEach(function(item) {
+                    totalItems += item.qty;
+                    totalAmount += (item.price * item.qty);
+                });
+
                 if(totalItems > 0) {
-                    cartBadge.innerText = totalItems;
-                    cartBadge.style.display = "block";
+                    if(cartBadge) { cartBadge.innerText = totalItems; cartBadge.style.display = "block"; }
                 } else {
-                    cartBadge.style.display = "none";
+                    if(cartBadge) cartBadge.style.display = "none";
                 }
                 
-                var totalAmount = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
-                cartTotalAmount.innerText = totalAmount;
+                if(cartTotalAmount) cartTotalAmount.innerText = totalAmount;
                 
                 if(cart.length === 0) {
-                    cartItemsList.innerHTML = `<div style="text-align:center; color:#888; margin-top:40px;"><i class="fas fa-shopping-basket fa-3x" style="color:#ccc;"></i><br><br>तुमची कार्ट रिकामी आहे!</div>`;
+                    if(cartItemsList) cartItemsList.innerHTML = `<div style="text-align:center; color:#888; margin-top:40px;"><i class="fas fa-shopping-basket fa-3x" style="color:#ccc;"></i><br><br>तुमची कार्ट रिकामी आहे!</div>`;
                     if(checkoutFormSection) checkoutFormSection.style.display = "none";
                     if(btnCartAction) {
                         btnCartAction.innerHTML = `ऑर्डर करण्यासाठी पुढे जा <i class="fas fa-arrow-right"></i>`;
@@ -661,12 +669,13 @@ Website: www.gavathishetmal.com</div>
                 }
                 
                 var html = "";
-                cart.forEach((item, index) => {
+                cart.forEach(function(item, index) {
+                    var unit = item.rawPrice.replace(/[0-9]/g, '').trim() || 'नग';
                     html += `
                     <div class="cart-item">
                         <div class="cart-item-details">
                             <div class="cart-item-name">${item.name}</div>
-                            <div class="cart-item-price">₹${item.price} (${item.rawPrice.replace(/[0-9]/g, '') || 'नग'})</div>
+                            <div class="cart-item-price">₹${item.price} (${unit})</div>
                             <div class="cart-item-qty-actions">
                                 <button class="qty-btn" onclick="changeQty(${index}, -1)">-</button>
                                 <span style="font-weight:bold; width:25px; text-align:center;">${item.qty}</span>
@@ -677,24 +686,40 @@ Website: www.gavathishetmal.com</div>
                         <div class="cart-item-remove" onclick="removeFromCart(${index})"><i class="fas fa-trash-alt"></i></div>
                     </div>`;
                 });
-                cartItemsList.innerHTML = html;
+                if(cartItemsList) cartItemsList.innerHTML = html;
             }
 
             window.proceedToCheckoutStep = function() {
-                document.getElementById("checkoutFormSection").style.display = "block";
+                var checkoutForm = document.getElementById("checkoutFormSection");
+                if(checkoutForm) checkoutForm.style.display = "block";
                 var btn = document.getElementById("btnCartAction");
-                btn.innerHTML = `<i class="fas fa-check-circle"></i> ऑर्डर कन्फर्म करा`;
-                btn.setAttribute("onclick", "handleFinalCheckout()");
-                btn.style.background = "#FF9933";
+                if(btn) {
+                    btn.innerHTML = `<i class="fas fa-check-circle"></i> ऑर्डर कन्फर्म करा`;
+                    btn.setAttribute("onclick", "handleFinalCheckout()");
+                    btn.style.background = "#FF9933";
+                }
             };
 
             window.handleFinalCheckout = function() {
-                var name = document.getElementById("custName").value.trim();
-                var phone = document.getElementById("custPhone").value.trim();
-                var email = document.getElementById("custEmail").value.trim();
-                var address = document.getElementById("custAddress").value.trim();
-                var paymentMode = document.getElementById("paymentModeSelect").value;
-                var totalAmount = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+                var nameEl = document.getElementById("custName");
+                var phoneEl = document.getElementById("custPhone");
+                var emailEl = document.getElementById("custEmail");
+                var addressEl = document.getElementById("custAddress");
+                var modeEl = document.getElementById("paymentModeSelect");
+
+                var name = nameEl ? nameEl.value.trim() : "";
+                var phone = phoneEl ? phoneEl.value.trim() : "";
+                var email = emailEl ? emailEl.value.trim() : "";
+                var address = addressEl ? addressEl.value.trim() : "";
+                var paymentMode = modeEl ? modeEl.value : "COD";
+                
+                var totalAmount = 0;
+                var itemsArray = [];
+                cart.forEach(function(item) {
+                    totalAmount += (item.price * item.qty);
+                    itemsArray.push(`- ${item.name} (${item.qty} Qty) = ₹${item.price * item.qty}`);
+                });
+                var itemsStr = itemsArray.join("\n");
                 
                 if(name === "" || phone === "" || address === "") {
                     alert("कृपया तुमचे नाव, मोबाईल नंबर आणि संपूर्ण पत्ता अचूक भरा!");
@@ -705,7 +730,6 @@ Website: www.gavathishetmal.com</div>
                     return;
                 }
                 
-                var itemsStr = cart.map(item => `- ${item.name} (${item.qty} Qty) = ₹${item.price * item.qty}`).join("\n");
                 var orderData = {
                     name: name,
                     phone: phone,
@@ -718,8 +742,10 @@ Website: www.gavathishetmal.com</div>
                 };
                 
                 var btn = document.getElementById("btnCartAction");
-                btn.disabled = true;
-                btn.innerHTML = `<i class="fas fa-spinner fa-spin"></i> प्रोसेसिंग सुरू आहे...`;
+                if(btn) {
+                    btn.disabled = true;
+                    btn.innerHTML = `<i class="fas fa-spinner fa-spin"></i> प्रोसेसिंग सुरू आहे...`;
+                }
                 
                 if(paymentMode === "COD") {
                     submitOrderToBackend(orderData);
@@ -731,11 +757,14 @@ Website: www.gavathishetmal.com</div>
                         return;
                     }
                     
+                    var bName = safeData.basicInfo.businessName || "My Business";
+                    var tColor = safeData.basicInfo.themeColor || "#28a745";
+
                     var options = {
                         "key": razorpayKeyId,
                         "amount": totalAmount * 100,
                         "currency": "INR",
-                        "name": "गावठी शेतमाल",
+                        "name": bName,
                         "description": "ऑनलाईन खरेदी पेमेंट",
                         "handler": function (response){
                             orderData.paymentId = response.razorpay_payment_id;
@@ -746,11 +775,13 @@ Website: www.gavathishetmal.com</div>
                             "email": email || "customer@example.com",
                             "contact": phone
                         },
-                        "theme": { "color": "#28a745" },
+                        "theme": { "color": tColor },
                         "modal": {
                             "ondismiss": function(){
-                                btn.disabled = false;
-                                btn.innerHTML = `<i class="fas fa-check-circle"></i> ऑर्डर कन्फर्म करा`;
+                                if(btn) {
+                                    btn.disabled = false;
+                                    btn.innerHTML = `<i class="fas fa-check-circle"></i> ऑर्डर कन्फर्म करा`;
+                                }
                             }
                         }
                     };
@@ -760,6 +791,13 @@ Website: www.gavathishetmal.com</div>
             };
 
             function submitOrderToBackend(orderData) {
+                if(webAppUrl === "YOUR_APPS_SCRIPT_WEB_APP_URL_HERE") {
+                    alert("त्रुटी: Google Apps Script ची Web App URL टाकलेली नाही!");
+                    var btn = document.getElementById("btnCartAction");
+                    if(btn) { btn.disabled = false; btn.innerHTML = `<i class="fas fa-check-circle"></i> ऑर्डर कन्फर्म करा`; }
+                    return;
+                }
+
                 fetch(webAppUrl, {
                     method: "POST",
                     mode: "no-cors",
@@ -773,23 +811,25 @@ Website: www.gavathishetmal.com</div>
                     updateCartUI();
                     window.toggleCart(false);
                     
-                    document.getElementById("custName").value = "";
-                    document.getElementById("custPhone").value = "";
-                    document.getElementById("custEmail").value = "";
-                    document.getElementById("custAddress").value = "";
+                    var n = document.getElementById("custName"); if(n) n.value = "";
+                    var p = document.getElementById("custPhone"); if(p) p.value = "";
+                    var e = document.getElementById("custEmail"); if(e) e.value = "";
+                    var a = document.getElementById("custAddress"); if(a) a.value = "";
                     
                     var btn = document.getElementById("btnCartAction");
-                    btn.disabled = false;
+                    if(btn) btn.disabled = false;
                 })
                 .catch(function(error) {
                     alert("ऑर्डर सबमिट करताना अडचण आली: " + error);
                     var btn = document.getElementById("btnCartAction");
-                    btn.disabled = false;
-                    btn.innerHTML = `<i class="fas fa-check-circle"></i> ऑर्डर कन्फर्म करा`;
+                    if(btn) {
+                        btn.disabled = false;
+                        btn.innerHTML = `<i class="fas fa-check-circle"></i> ऑर्डर कन्फर्म करा`;
+                    }
                 });
             }
 
-            // --- Menu Actions ---
+            // --- १. Menu Actions ---
             window.openNav = function() {
                 var menu = document.getElementById("sideMenu");
                 var overlay = document.getElementById("menuOverlay");
@@ -804,12 +844,14 @@ Website: www.gavathishetmal.com</div>
                 if(overlay) overlay.style.display = "none";
             };
 
+            // --- २. Popup Logic ---
             window.closePopup = function() {
                 var modal = document.getElementById('offerModal');
                 if(modal) modal.style.display = 'none';
                 sessionStorage.setItem('popup_' + safeKeyName, 'true'); 
             };
 
+            // --- ३. WhatsApp Enquiry ---
             window.sendGeneralEnquiry = function() {
                 if(!waNumber) return alert("WhatsApp नंबर उपलब्ध नाही.");
                 var nameEl = document.getElementById("eqName");
@@ -826,8 +868,10 @@ Website: www.gavathishetmal.com</div>
                 window.open("https:
             };
 
+            
             document.addEventListener('DOMContentLoaded', function() {
                 updateCartUI(); 
+                
                 
                 try {
                     var slideIndex = 0;
@@ -842,6 +886,7 @@ Website: www.gavathishetmal.com</div>
                     }
                 } catch(e) {}
 
+                
                 try {
                     var modal = document.getElementById('offerModal');
                     if(modal && !sessionStorage.getItem('popup_' + safeKeyName)) {
@@ -849,6 +894,7 @@ Website: www.gavathishetmal.com</div>
                     }
                 } catch(e) {}
 
+                
                 try {
                     var deferredPrompt;
                     var installBanner = document.getElementById('installBanner');
